@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
+    "Language": "SFX",
+    "Hash": "{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk"
+   }
+  ],
+  "FileHash": "{DD1AD3C8-C80D-FB0F-3DD6-D3E1CD690A63}"
+ }
+}
