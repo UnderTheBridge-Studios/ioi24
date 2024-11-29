@@ -1,0 +1,11 @@
+// MEL Script to move the pivot of selected mesh(es) to the world origin
+string $selection[] = `ls -sl`; // Get selected objects
+
+if (size($selection) > 0) { // Check if there's a selection
+    for ($obj in $selection) {
+        // Move pivot to the world origin without affecting the mesh position
+        xform -ws -piv 0 0 0 $obj;
+    }
+} else {
+    warning "No objects selected!";
+}

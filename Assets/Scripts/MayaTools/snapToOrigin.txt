@@ -1,0 +1,11 @@
+// MEL Script to move selected mesh to the world origin
+string $selection[] = `ls -sl`; // Get selected objects
+
+if (size($selection) > 0) { // Check if there's a selection
+    for ($obj in $selection) {
+        // Move the object directly to the origin
+        xform -ws -t 0 0 0 $obj; // Set world-space translation to (0, 0, 0)
+    }
+} else {
+    warning "No objects selected!";
+}
