@@ -35,6 +35,7 @@ public class BuildingController : MonoBehaviour
     private int m_height = 0;
     private int m_rotation = 0;
     private float m_breakVelocity;
+    private int m_points = 0;
 
     private void Awake()
     {
@@ -105,6 +106,7 @@ public class BuildingController : MonoBehaviour
         }
         else
         {
+            GameManager.Instance.AddPoints(playerController.playerNumber, m_height);
             m_collider.enabled = false;
             m_meshFilter.mesh = m_buildingDestroyed;
         }

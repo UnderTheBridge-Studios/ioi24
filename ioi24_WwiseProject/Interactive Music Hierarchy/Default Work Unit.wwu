@@ -1,6 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}" SchemaVersion="123">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="MusicPlaylist" ID="{3803B10C-9D8D-48EF-BA56-9C1BE84081FD}" ShortID="117580297">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{B91FE80E-73F9-47F3-AAA3-9C1071E20FCF}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{25E3813F-D828-4C3B-A35C-DEA4C422ECD7}" ShortID="1055659395">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{65DEC138-E31D-4A6C-A492-CC0F1B16A7EA}" ShortID="616501194">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="PP_Silly_Goose_Loop_Master" ID="{31B32D7A-1BE8-433F-A9A7-11AC9FC9DBFD}" WorkUnitID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{3C5AA3A4-3619-4C39-913B-3AB3D7EC47CE}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{B4EC6A96-708C-43EF-8DA3-737DF25AC131}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="PP_Silly_Goose_Loop_Master" ID="{31B32D7A-1BE8-433F-A9A7-11AC9FC9DBFD}" ShortID="198754770">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="56888.8888888889"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="PP_Silly_Goose_Lite_Loop" ID="{3D459783-BB00-4D8D-823E-D264699DF71E}" ShortID="253177949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{B91FE80E-73F9-47F3-AAA3-9C1071E20FCF}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{39A3E46A-ECAF-4C45-B0AE-D35576800DE8}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PP_Silly_Goose_Lite_Loop" ID="{BE50E6B7-C4D2-49AE-8057-A8CF43E57B27}">
+											<Language>SFX</Language>
+											<AudioFile>PP_Silly_Goose_Lite_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491864704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="2">
+												<StateGroupRef Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Gameplay" ID="{93D76D5A-4769-41CA-8366-06A47EA06427}"/>
+												<CustomState Name="" ID="{00876B44-5EAB-4218-A1C1-D817F404A4E0}" ShortID="779365654">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
+												<CustomState Name="" ID="{3727815E-BD13-4671-A880-BD43DC6BBEB1}" ShortID="968966650"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4ED4FF0F-0206-4D38-B024-957F91322D2B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="PP_Silly_Goose_Lite_Loop" ID="{427963D2-9DD3-4836-AFD1-2B80CB46C46A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="56888.8888888889"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="PP_Silly_Goose_Lite_Loop" ID="{BE50E6B7-C4D2-49AE-8057-A8CF43E57B27}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="PP_Silly_Goose_FULL_Loop" ID="{98C1233D-50DA-4DC6-8065-904CADEF70B4}" ShortID="453476011">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{B91FE80E-73F9-47F3-AAA3-9C1071E20FCF}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{DFBA742F-E09D-47BC-98A1-A342B43F0B93}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PP_Silly_Goose_FULL_Loop" ID="{9671AFA6-57A3-4511-8DF6-7985040B4FAD}">
+											<Language>SFX</Language>
+											<AudioFile>PP_Silly_Goose_FULL_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="945339757"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="2">
+												<StateGroupRef Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Gameplay" ID="{93D76D5A-4769-41CA-8366-06A47EA06427}"/>
+												<CustomState Name="" ID="{208919AA-FA44-4C5F-B0F3-0BAD929898C5}" ShortID="428065219"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
+												<CustomState Name="" ID="{0C264235-87DB-4544-A1B3-B2D141876A8E}" ShortID="108792990">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{AD4746C4-9E42-4ED0-BDE9-CE4C4D8072D2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="PP_Silly_Goose_FULL_Loop" ID="{3D7A8D1E-D588-48D2-AF20-5C0ED56420B8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="56888.8888888889"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="PP_Silly_Goose_FULL_Loop" ID="{9671AFA6-57A3-4511-8DF6-7985040B4FAD}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{E6FF5F81-928D-44AB-9329-14A933E2C112}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{6E752399-0DCA-4936-AFD1-11F5F6291D27}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="56888.8888888889"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo MusicSyncType="2">
+								<StateGroupRef Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Gameplay" ID="{93D76D5A-4769-41CA-8366-06A47EA06427}"/>
+								<CustomState Name="" ID="{410BD70C-3861-425E-808D-381F97639DF8}" ShortID="160553922"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
+								<CustomState Name="" ID="{F8B21C23-DDEB-48F5-AC7B-F122300E307B}" ShortID="1026246345"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{DEA21D66-C958-45F2-A8C9-14DDA845A393}" ShortID="284024221">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Tempo" ID="{470C83A0-DBBE-4275-A109-2A541112F8AE}" WorkUnitID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{43658D05-9A9E-491F-8B52-C28F52F711D0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>1.73514</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
