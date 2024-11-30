@@ -95,7 +95,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo MusicSyncType="3">
 												<StateGroupRef Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -105,6 +105,14 @@
 												<CustomState Name="" ID="{00876B44-5EAB-4218-A1C1-D817F404A4E0}" ShortID="779365654">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Victory" ID="{16F5913A-359D-440A-800B-73BAD3EB9711}"/>
+												<CustomState Name="" ID="{6F8789D8-C15B-47DF-ACAB-579B3313185A}" ShortID="132874371">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="40"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -178,7 +186,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo MusicSyncType="3">
 												<StateGroupRef Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -186,6 +194,14 @@
 											<CustomState>
 												<StateRef Name="Gameplay" ID="{93D76D5A-4769-41CA-8366-06A47EA06427}"/>
 												<CustomState Name="" ID="{208919AA-FA44-4C5F-B0F3-0BAD929898C5}" ShortID="428065219"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Victory" ID="{16F5913A-359D-440A-800B-73BAD3EB9711}"/>
+												<CustomState Name="" ID="{7DC5FC20-94EA-4EAA-96C1-172EDF4AFB4F}" ShortID="213914048">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
@@ -258,6 +274,10 @@
 								<CustomState Name="" ID="{410BD70C-3861-425E-808D-381F97639DF8}" ShortID="160553922"/>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="Victory" ID="{16F5913A-359D-440A-800B-73BAD3EB9711}"/>
+								<CustomState Name="" ID="{F267F908-15BE-4A6E-9659-6EB0F6C68CAC}" ShortID="97556669"/>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
 								<CustomState Name="" ID="{F8B21C23-DDEB-48F5-AC7B-F122300E307B}" ShortID="1026246345"/>
 							</CustomState>
@@ -288,8 +308,53 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
+																<XPos>0.49593</XPos>
+																<YPos>1</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
 																<XPos>1</XPos>
-																<YPos>1.73514</YPos>
+																<YPos>1.2</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{23738549-8135-4299-B161-EDB92E7ED493}" ShortID="179788200">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Tempo" ID="{470C83A0-DBBE-4275-A109-2A541112F8AE}" WorkUnitID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FCB818EF-D3BC-434D-883F-EE16B1457CC9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.697712418300654</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>2</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

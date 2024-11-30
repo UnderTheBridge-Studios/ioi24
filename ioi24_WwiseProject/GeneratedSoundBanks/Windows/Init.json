@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E48ABC78-12C8-DD8F-9B63-69F33696DF16}",
+    "Hash": "{1A87AF7F-916E-729D-E31E-6FB701669001}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -104,12 +104,18 @@
         "Name": "Menu",
         "ObjectPath": "\\States\\Default Work Unit\\GameState\\Menu",
         "GUID": "{12A2858F-766E-4F06-A52B-1321B468F1DD}"
+       },
+       {
+        "Id": "2716678721",
+        "Name": "Victory",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Victory",
+        "GUID": "{16F5913A-359D-440A-800B-73BAD3EB9711}"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{7AB11042-E16B-0FDF-9596-E2CBBF01457E}"
+  "FileHash": "{62D98BE5-18EC-1C2D-4EA9-5A3F1F71A655}"
  }
 }

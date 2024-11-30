@@ -13,6 +13,12 @@ public class GameManager : MonoBehaviour
 
     public UIManager m_UIManager;
 
+    [Header("Wwise")]
+    [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
+    [SerializeField] private AK.Wwise.State m_WwiseGameplay;
+    [SerializeField] private AK.Wwise.State m_WwiseVictory;
+    [SerializeField] private AK.Wwise.RTPC m_WwiseTempo;
+
     public enum GameState { MainMenu, Gameplay, VictoryScreen}
 
     private int m_pointsPlayer1;
@@ -46,6 +52,8 @@ public class GameManager : MonoBehaviour
                 m_Player1.SetActive(false);
                 m_Player2?.SetActive(false);
                 m_UIManager.ShowMainMenu();
+                m_WwiseMainMenu.SetValue();
+                m_WwiseTempo.SetValue(null, 0f);
                 break;
 
             case GameState.Gameplay:
@@ -58,6 +66,7 @@ public class GameManager : MonoBehaviour
 
                 m_UIManager.InitializeHUD(m_pointsPlayer1, m_pointsPlayer2, m_timer);
                 m_UIManager.ShowHUD();
+                m_WwiseGameplay.SetValue();
                 break;
 
             case GameState.VictoryScreen:
@@ -65,6 +74,7 @@ public class GameManager : MonoBehaviour
                 m_Player2?.SetActive(false);
                 int result = m_pointsPlayer1 == m_pointsPlayer2 ? -1 : m_pointsPlayer1 > m_pointsPlayer2 ? 1 : 2;
                 m_UIManager.ShowVictoryScreen(result);
+                m_WwiseVictory.SetValue();
                 break;
         }
     }
@@ -80,6 +90,7 @@ public class GameManager : MonoBehaviour
                 ChangeGameState(GameState.VictoryScreen);
             }
             m_UIManager.UpdateTimer(m_timer);
+            m_WwiseTempo.SetValue(null, (m_MaxTime - m_timer) / m_MaxTime);
         }
     }
 

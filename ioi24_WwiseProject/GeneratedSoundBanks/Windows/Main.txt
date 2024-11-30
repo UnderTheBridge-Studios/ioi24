@@ -14,6 +14,7 @@ State	ID	Name	State Group			Notes
 	89505537	Gameplay	GameState			
 	748895195	None	GameState			
 	2607556080	Menu	GameState			
+	2716678721	Victory	GameState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	307962790	Tempo			\Default Work Unit\Tempo	
