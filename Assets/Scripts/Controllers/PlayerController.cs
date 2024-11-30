@@ -58,7 +58,8 @@ public class PlayerController : MonoBehaviour
     }
     public void SmallBounce()
     {
-        m_ball.AddForce(0, 1, 0);
+        Debug.Log("SmallBounce");
+        m_ball.AddForce(0, 100, 0);
     }
 
 }
