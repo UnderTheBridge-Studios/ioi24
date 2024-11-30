@@ -20,11 +20,11 @@ public class BuildingController : MonoBehaviour
     [SerializeField]
     private bool m_randomizeRotation;
 
-    [Tooltip("0 to 5")]
+    [Tooltip("0 to 4")]
     [SerializeField]
     private int m_buildingHeight;
 
-    [Tooltip("0 to 4")]
+    [Tooltip("0 to 3")]
     [SerializeField]
     private int m_buildingRotation;
 
@@ -47,7 +47,7 @@ public class BuildingController : MonoBehaviour
 
     private int m_height = 0;
     private int m_rotation = 0;
-    private float m_breakVelocity;
+    private float m_breakVelocity = 0.1f;
     private int m_points = 0;
 
     private void Awake()
@@ -123,7 +123,7 @@ public class BuildingController : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.AddPoints(playerController.playerNumber, m_height);
+            GameManager.Instance.AddPoints(playerController.IsPlayer1, m_height);
             m_collider.enabled = false;
             m_meshFilter.mesh = m_buildingDestroyed;
         }

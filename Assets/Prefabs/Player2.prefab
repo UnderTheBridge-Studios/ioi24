@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &265183553252914256
+--- !u!1001 &846917592028859289
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,24 +9,56 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 32461260488891698, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
-      propertyPath: m_playerNumber
+      propertyPath: m_isPlayer1
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 843167399116936875}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234177603122996254, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2313507691276874512, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
       propertyPath: m_Name
-      value: Player2
+      value: Player2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8880873201240266984, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.17
       objectReference: {fileID: 0}
     - target: {fileID: 8880873201240266984, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 8880873201240266984, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.09
       objectReference: {fileID: 0}
     - target: {fileID: 8880873201240266984, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61,3 +93,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+--- !u!114 &843167399116936875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 32461260488891698, guid: bd8b4b56d2bc5b94cbb157abb35d751f, type: 3}
+  m_PrefabInstance: {fileID: 846917592028859289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a322829882bf6c468900b0075f519c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
