@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
     }
-
+	
     private void Start()
     {
         ChangeGameState(GameState.MainMenu);
@@ -95,8 +95,6 @@ public class GameManager : MonoBehaviour
             pointsPlayer2 += ((int)buildingPuntuation[height - 1]);
             m_UIManager.UpdatePointsPlayer2(pointsPlayer2);
         }
-            
-        Debug.Log(pointsPlayer1 + " : " + pointsPlayer2);
     }
 
     public int GetPoints(bool player)
