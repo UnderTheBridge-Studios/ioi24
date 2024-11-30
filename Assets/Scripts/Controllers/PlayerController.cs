@@ -6,11 +6,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_ball;
 
     [Tooltip("True Player1, False Player2")]
-    [SerializeField]
-    private bool m_isPlayer1;
+    [SerializeField] private bool m_isPlayer1;
 
-    [SerializeField]
-    private float m_acceleration;
+    [SerializeField] private float m_acceleration;
 
     private Vector3 m_movement;
     private Vector2 m_input;

@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class Shadow : MonoBehaviour
 {
-    [SerializeField] float m_height;
+    [SerializeField] private float m_height;
 
     private Transform m_ball;
-
 
     private void Start()
     {
