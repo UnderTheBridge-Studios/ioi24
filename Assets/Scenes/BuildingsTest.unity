@@ -262,19 +262,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.994508
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.104660645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -294,7 +294,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cf0edfe16eb8c894a9d6263afc06bb7f, type: 2}
     - target: {fileID: -927199367670048503, guid: 4541aa5d42abfff46a408f359061021e, type: 3}
       propertyPath: m_Name
-      value: HamsterPose01
+      value: Hamster1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef21d400922100498b56c7f0077115e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_lerpVelocity: 0.2
 --- !u!114 &1006071970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 9773ba17e696f604b871e43d30d9c215, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -747,7 +748,23 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1006071969}
+        m_TargetAssemblyTypeName: TrackBall, Assembly-CSharp
+        m_MethodName: Rotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9449a286-5cf5-422d-bc04-0c7aeaee3251
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
