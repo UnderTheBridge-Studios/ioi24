@@ -4,7 +4,7 @@ using UnityEngine.ProBuilder.MeshOperations;
 
 public class BuildingController : MonoBehaviour
 {
-	[Head("Breaking velocities")]
+	[Header("Breaking velocities")]
     [SerializeField]
     private float m_velocity1;
     [SerializeField]
@@ -14,7 +14,8 @@ public class BuildingController : MonoBehaviour
     [SerializeField]
     private float m_velocity4;
 
-	[Head("Randomizers")]
+	[Header("Randomizers")]
+    [SerializeField]
     private bool m_randomizeHeight;
     [SerializeField]
     private bool m_randomizeRotation;
