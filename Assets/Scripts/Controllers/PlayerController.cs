@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_ball;
 
     [SerializeField]
+    private int m_playerNum = 0;
+    [SerializeField]
     private float m_acceleration;
 
     private Vector3 m_movement;
