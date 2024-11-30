@@ -261,7 +261,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 07d48d8df2b92d4dbcf500939d81c741
     GuidInternal: 
-    m_lastTime: -8584686258541334631
+    m_lastTime: -8584686024139117015
     List:
     - name: ComboPlayer1
       guid: 273cc9ac2f656146971c911ffd8015bc
@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b6df22b7286d8547b71d7d797aac2089
     GuidInternal: 
-    m_lastTime: -8584686266505478234
+    m_lastTime: -8584686060039139120
     List:
     - name: GameState
       guid: f65874fe1fa8b94684286c0c30dd88f5
@@ -396,6 +396,22 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: c4f8803c8f1cf04d8750878204b14588
+      - name: Victory
+        guid: 3a91f5169d350a44800b73bad3eb9711
+        id: 2716678721
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b6df22b7286d8547b71d7d797aac2089
+        - ElementName: GameState
+          ObjectType: 9
+          guid: f65874fe1fa8b94684286c0c30dd88f5
+        - ElementName: Victory
+          ObjectType: 8
+          guid: 3a91f5169d350a44800b73bad3eb9711
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -428,7 +444,7 @@ MonoBehaviour:
     m_lastTime: -8584687189576058670
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000a000000130000001b0000001c000000
+  ExpandedWaapiItemIds: 0500000006000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

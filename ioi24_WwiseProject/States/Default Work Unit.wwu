@@ -8,6 +8,7 @@
 						<State Name="None" ID="{3C80F8C4-1C8F-4DF0-8750-878204B14588}"/>
 						<State Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>
 						<State Name="Gameplay" ID="{93D76D5A-4769-41CA-8366-06A47EA06427}"/>
+						<State Name="Victory" ID="{16F5913A-359D-440A-800B-73BAD3EB9711}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

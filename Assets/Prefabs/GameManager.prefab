@@ -47,5 +47,27 @@ MonoBehaviour:
   buildingPuntuation: {x: 1, y: 2, z: 4, w: 8}
   m_Player1: {fileID: 0}
   m_Player2: {fileID: 0}
-  m_MaxTime: 5
+  m_MaxTime: 10
   m_UIManager: {fileID: 0}
+  m_WwiseMainMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2dc869df03185754797a0445f705d281, type: 2}
+  m_WwiseGameplay:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9e5cd38ef82ff1749a98272437356e4e, type: 2}
+  m_WwiseVictory:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ad011bcb94c82ec4ba980ced90fe128a, type: 2}
+  m_WwiseTempo:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 903293fcca6c8dc46ae10bcf81ee45c6, type: 2}

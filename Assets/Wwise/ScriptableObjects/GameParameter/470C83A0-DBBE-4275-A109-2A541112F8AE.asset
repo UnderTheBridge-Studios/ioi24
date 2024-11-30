@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe49818c6fe19149abc810d6781da5d, type: 3}
+  m_Name: 470C83A0-DBBE-4275-A109-2A541112F8AE
+  m_EditorClassIdentifier: 
+  objectName: Tempo
+  id: 307962790
+  guid: 470C83A0-DBBE-4275-A109-2A541112F8AE
