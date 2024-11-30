@@ -42,7 +42,7 @@ namespace AK
     {
         static const AkUniqueID COMBOPLAYER1 = 3161811159U;
         static const AkUniqueID COMBOPLAYER2 = 3161811156U;
-        static const AkUniqueID NEW_GAME_PARAMETER = 3671138082U;
+        static const AkUniqueID DESTRUCTIONLEVEL = 1381176751U;
         static const AkUniqueID TEMPO = 307962790U;
     } // namespace GAME_PARAMETERS
 

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{ED355AF0-D8EE-A6D7-3FD5-3546CC4EA201}",
+    "Hash": "{E48ABC78-12C8-DD8F-9B63-69F33696DF16}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -62,6 +62,12 @@
       "GUID": "{470C83A0-DBBE-4275-A109-2A541112F8AE}"
      },
      {
+      "Id": "1381176751",
+      "Name": "DestructionLevel",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DestructionLevel",
+      "GUID": "{23E2275A-A389-4D0F-B6B0-1E760F0715BE}"
+     },
+     {
       "Id": "3161811156",
       "Name": "ComboPlayer2",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\ComboPlayer2",
@@ -72,12 +78,6 @@
       "Name": "ComboPlayer1",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\ComboPlayer1",
       "GUID": "{ACC93C27-652F-4661-971C-911FFD8015BC}"
-     },
-     {
-      "Id": "3671138082",
-      "Name": "New_Game_Parameter",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\New_Game_Parameter",
-      "GUID": "{23E2275A-A389-4D0F-B6B0-1E760F0715BE}"
      }
     ],
     "StateGroups": [
@@ -110,6 +110,6 @@
     ]
    }
   ],
-  "FileHash": "{6802A86B-8EB5-45D1-C0F8-7BB30D53F576}"
+  "FileHash": "{7AB11042-E16B-0FDF-9596-E2CBBF01457E}"
  }
 }

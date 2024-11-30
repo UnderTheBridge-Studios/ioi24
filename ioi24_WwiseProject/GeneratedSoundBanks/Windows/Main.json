@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{553D9553-7972-A4BB-E175-89B3A5D5317F}",
+    "Hash": "{36D892E8-9BCF-EECD-D822-2B84AA245D85}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "coin_001.wav",
-      "CachePath": "72/{72B08D87-FF55-E5DF-32A5-C29D3906835E}.wem"
+      "CachePath": "73/{73860D89-B3AD-E6D1-17EF-0F6597209BFC}.wem"
      },
      {
       "Id": "491864704",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "breakblock_001.wav",
-      "CachePath": "8B/{8B4EFB5F-CD54-B49C-D2E3-EF90EE3C7EAE}.wem"
+      "CachePath": "40/{40C277EF-A02D-AEE8-F4D2-A6D3D72DEBEF}.wem"
      },
      {
       "Id": "917251637",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Player_PowerUp_001.wav",
-      "CachePath": "6B/{6B1DFCB0-720A-0521-9A38-1BA59F4C7957}.wem"
+      "CachePath": "7A/{7A0255FD-A204-77E8-86C2-537FE1B46FA5}.wem"
      },
      {
       "Id": "945339757",
@@ -194,6 +194,12 @@
       "GUID": "{470C83A0-DBBE-4275-A109-2A541112F8AE}"
      },
      {
+      "Id": "1381176751",
+      "Name": "DestructionLevel",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DestructionLevel",
+      "GUID": "{23E2275A-A389-4D0F-B6B0-1E760F0715BE}"
+     },
+     {
       "Id": "3161811156",
       "Name": "ComboPlayer2",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\ComboPlayer2",
@@ -208,6 +214,6 @@
     ]
    }
   ],
-  "FileHash": "{7BDB1C3A-6188-5AED-F567-EA6BB01DC303}"
+  "FileHash": "{8DCA57ED-3BEA-E8FC-9B11-7A000D1DF8B3}"
  }
 }
