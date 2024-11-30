@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 4541aa5d42abfff46a408f359061021e
+guid: bac6950d81cf10b43a6dd5f4b7cadc47
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ball
+    second: {fileID: 2100000, guid: 71b72eb6e65b45a41988423fe6906fcc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -65,7 +70,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
