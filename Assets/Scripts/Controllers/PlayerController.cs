@@ -5,6 +5,9 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody m_ball;
 
+    [Tooltip("True Player1, False Player2")]
+    [SerializeField] private bool m_playerNumber;
+
     [SerializeField]
     private int m_playerNum = 0;
     [SerializeField]
@@ -12,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 m_movement;
     private Vector2 m_input;
+
+    public bool playerNumber => m_playerNumber;
 
     private void Awake()
     {

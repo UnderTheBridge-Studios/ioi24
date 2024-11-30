@@ -4,8 +4,29 @@ using UnityEngine.ProBuilder.MeshOperations;
 
 public class BuildingController : MonoBehaviour
 {
+	[Header("Breaking velocities")]
     [SerializeField]
-    private bool m_isRandomized;
+    private float m_velocity1;
+    [SerializeField]
+    private float m_velocity2;
+    [SerializeField]
+    private float m_velocity3;
+    [SerializeField]
+    private float m_velocity4;
+
+	[Header("Randomizers")]
+    [SerializeField]
+    private bool m_randomizeHeight;
+    [SerializeField]
+    private bool m_randomizeRotation;
+
+    [Tooltip("0 to 5")]
+    [SerializeField]
+    private int m_buildingHeight;
+
+    [Tooltip("0 to 4")]
+    [SerializeField]
+    private int m_buildingRotation;
 
     [Header("Meshes")]
     [SerializeField]
@@ -21,49 +42,59 @@ public class BuildingController : MonoBehaviour
     [SerializeField]
     private Mesh m_buildingDestroyed;
 
-    [SerializeField]
-    private LayerMask m_layerMask;
     private Collider m_collider;
     private MeshFilter m_meshFilter;
 
     private int m_height = 0;
     private int m_rotation = 0;
+    private float m_breakVelocity;
+    private int m_points = 0;
 
     private void Awake()
     {
         m_collider = GetComponent<Collider>();
         m_meshFilter = GetComponent<MeshFilter>();
 
-        if (m_isRandomized)
-        {
+        if (m_randomizeHeight)
             m_height = Random.Range(0, 5);
-            m_rotation = Random.Range(0, 4);
-        }
+        else
+            m_height = m_buildingHeight;
 
-        SetMesh();
+        if (m_randomizeRotation)
+            m_rotation = Random.Range(0, 4);
+        else
+            m_rotation = m_buildingRotation;
+
+        SetBuilding();
     }
 
-    private void SetMesh()
+    private void SetBuilding()
     {
         switch (m_height)
         {
             case 0:
                 m_meshFilter.mesh = m_flat_concrete;
-                m_collider.enabled = false;
                 break;
             case 1:
                 m_meshFilter.mesh = m_building1;
+                m_breakVelocity = m_velocity1;
                 break;
             case 2:
                 m_meshFilter.sharedMesh = m_building2;
+                m_breakVelocity = m_velocity2;
                 break;
             case 3:
                 m_meshFilter.sharedMesh = m_building3;
+                m_breakVelocity = m_velocity3;
                 break;
             case 4:
                 m_meshFilter.sharedMesh = m_building4;
+                m_breakVelocity = m_velocity4;
                 break;
         }
+
+        if (m_height!=0)
+            m_collider.enabled = true;
 
         switch (m_rotation)
         {
@@ -86,12 +117,13 @@ public class BuildingController : MonoBehaviour
     {
         PlayerController playerController = other.gameObject.GetComponentInParent<PlayerController>();
 
-        if (playerController.GetVelocity().magnitude <=500)
+        if (playerController.GetVelocity().magnitude <= m_breakVelocity)
         {
             playerController.Bounce(transform.position);
         }
         else
         {
+            GameManager.Instance.AddPoints(playerController.playerNumber, m_height);
             m_collider.enabled = false;
             m_meshFilter.mesh = m_buildingDestroyed;
         }

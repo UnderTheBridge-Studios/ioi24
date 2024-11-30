@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}" SchemaVersion="123">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Tempo" ID="{470C83A0-DBBE-4275-A109-2A541112F8AE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ComboPlayer1" ID="{ACC93C27-652F-4661-971C-911FFD8015BC}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ComboPlayer2" ID="{78B05279-6D96-476D-B799-D18F75D5176D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DestructionLevel" ID="{23E2275A-A389-4D0F-B6B0-1E760F0715BE}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
