@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class Shadow : MonoBehaviour
 {
-    [SerializeField] Transform m_ball;
     [SerializeField] float m_height;
+
+    private Transform m_ball;
+
+
+    private void Start()
+    {
+        m_ball = GameManager.Instance.Player1.transform;
+    }
 
     void Update()
     {
