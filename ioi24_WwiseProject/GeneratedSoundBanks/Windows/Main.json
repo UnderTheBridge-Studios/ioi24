@@ -10,12 +10,204 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}",
+    "Hash": "{553D9553-7972-A4BB-E175-89B3A5D5317F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
-    "Path": "Main.bnk"
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "123580271",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "people-screaming-sound-effect.wav",
+      "CachePath": "B4/{B462EDD0-E96D-919B-F973-695793BE26D6}.wem"
+     },
+     {
+      "Id": "232726485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Impact_002.wav",
+      "CachePath": "04/{049C33D1-EB31-DDED-144C-FE4C33E76702}.wem"
+     },
+     {
+      "Id": "379634924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bonk-Sound-Effect_1.wav",
+      "CachePath": "12/{12C6A1C3-20AC-112F-44B0-C58D6A32FAF7}.wem"
+     },
+     {
+      "Id": "488614765",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "coin_001.wav",
+      "CachePath": "72/{72B08D87-FF55-E5DF-32A5-C29D3906835E}.wem"
+     },
+     {
+      "Id": "491864704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PP_Silly_Goose_Lite_Loop.wav",
+      "CachePath": "FC/{FCDE975C-C267-A636-570C-5A7E0C68A900}.wem"
+     },
+     {
+      "Id": "636736344",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "breakblock_001.wav",
+      "CachePath": "8B/{8B4EFB5F-CD54-B49C-D2E3-EF90EE3C7EAE}.wem"
+     },
+     {
+      "Id": "917251637",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Player_PowerUp_001.wav",
+      "CachePath": "6B/{6B1DFCB0-720A-0521-9A38-1BA59F4C7957}.wem"
+     },
+     {
+      "Id": "945339757",
+      "Language": "SFX",
+      "Streaming": "true",
+      "Location": "Loose",
+      "ShortName": "PP_Silly_Goose_FULL_Loop.wav",
+      "Path": "Media/945339757.wem",
+      "CachePath": "92/{929BB01F-9FF2-0CD5-A27C-36BF487C9177}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1925897751",
+      "Name": "PlayBounceBuilding",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayBounceBuilding",
+      "GUID": "{27CBFA6A-E377-451D-BF4A-FD2F3CDF986F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33707482",
+      "DurationMax": "0.33707482",
+      "MediaRefs": [
+       {
+        "Id": "232726485"
+       }
+      ]
+     },
+     {
+      "Id": "3722971456",
+      "Name": "PlayBouncePlayer",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayBouncePlayer",
+      "GUID": "{410B0A29-D9BD-4CC1-8E68-3B94F6B02604}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.88235825",
+      "DurationMax": "0.88235825",
+      "MediaRefs": [
+       {
+        "Id": "379634924"
+       }
+      ]
+     },
+     {
+      "Id": "417627684",
+      "Name": "PlayMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayMusic",
+      "GUID": "{6A5B8445-908A-4469-B4B1-FCA3B4F6F29B}",
+      "DurationType": "OneShot",
+      "DurationMin": "56.88889",
+      "DurationMax": "56.88889",
+      "MediaRefs": [
+       {
+        "Id": "491864704"
+       },
+       {
+        "Id": "945339757"
+       }
+      ]
+     },
+     {
+      "Id": "461064183",
+      "Name": "PlayPeopleScreaming",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayPeopleScreaming",
+      "GUID": "{418F2D66-266B-4F96-8415-E8EC45C72774}",
+      "DurationType": "OneShot",
+      "DurationMin": "40.07764",
+      "DurationMax": "40.07764",
+      "MediaRefs": [
+       {
+        "Id": "123580271"
+       }
+      ]
+     },
+     {
+      "Id": "3422018549",
+      "Name": "PlayPointPlayer1",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayPointPlayer1",
+      "GUID": "{FF78C025-6561-4ECA-A1E3-CA614DFBE9FF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.29617715",
+      "DurationMax": "0.6097116",
+      "MediaRefs": [
+       {
+        "Id": "488614765"
+       },
+       {
+        "Id": "636736344"
+       }
+      ]
+     },
+     {
+      "Id": "3422018550",
+      "Name": "PlayPointPlayer2",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayPointPlayer2",
+      "GUID": "{E5072F16-D9A0-4110-A829-6F608DBF398E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.29617715",
+      "DurationMax": "0.6097116",
+      "MediaRefs": [
+       {
+        "Id": "636736344"
+       },
+       {
+        "Id": "917251637"
+       }
+      ]
+     },
+     {
+      "Id": "3683208001",
+      "Name": "StopPeopleScreaming",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopPeopleScreaming",
+      "GUID": "{A5FF199E-FD63-4ED9-AA5F-03AECAD2F426}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "307962790",
+      "Name": "Tempo",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Tempo",
+      "GUID": "{470C83A0-DBBE-4275-A109-2A541112F8AE}"
+     },
+     {
+      "Id": "3161811156",
+      "Name": "ComboPlayer2",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ComboPlayer2",
+      "GUID": "{78B05279-6D96-476D-B799-D18F75D5176D}"
+     },
+     {
+      "Id": "3161811159",
+      "Name": "ComboPlayer1",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ComboPlayer1",
+      "GUID": "{ACC93C27-652F-4661-971C-911FFD8015BC}"
+     }
+    ]
    }
   ],
-  "FileHash": "{DD1AD3C8-C80D-FB0F-3DD6-D3E1CD690A63}"
+  "FileHash": "{7BDB1C3A-6188-5AED-F567-EA6BB01DC303}"
  }
 }
