@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayMusic" ID="{6A5B8445-908A-4469-B4B1-FCA3B4F6F29B}">
+					<ChildrenList>
+						<Action Name="" ID="{F2D45E59-A046-4E48-B640-3B8E2AF91FDA}" ShortID="358276565">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PP_Silly_Goose_Loop_Master" ID="{31B32D7A-1BE8-433F-A9A7-11AC9FC9DBFD}" WorkUnitID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayPointPlayer1" ID="{FF78C025-6561-4ECA-A1E3-CA614DFBE9FF}">
+					<ChildrenList>
+						<Action Name="" ID="{839876D2-2256-454B-898D-991AEA7798F8}" ShortID="352808495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="point_player1" ID="{501B3538-4B72-4BE7-94BD-1F0FB906135B}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{828E6D2E-7604-4FD2-88F2-237D40C8D058}" ShortID="685054597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="crash_building" ID="{7141BF0F-9F00-4360-B972-6100D9B1FEED}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayPointPlayer2" ID="{E5072F16-D9A0-4110-A829-6F608DBF398E}">
+					<ChildrenList>
+						<Action Name="" ID="{6C6FE1E8-D73D-439F-9EC0-5493D4097B4B}" ShortID="820414628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="point_player2" ID="{19518A02-F007-4762-B799-2612B2C58A3D}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F6F5BA1-5C67-4C0A-8250-0FCACD108EA4}" ShortID="1052014919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="crash_building" ID="{7141BF0F-9F00-4360-B972-6100D9B1FEED}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayBounceBuilding" ID="{27CBFA6A-E377-451D-BF4A-FD2F3CDF986F}">
+					<ChildrenList>
+						<Action Name="" ID="{D0FBB99C-3B7A-4203-93A7-E8A6EAE95AAC}" ShortID="148201356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bounce_building" ID="{DE0D156E-52FE-455D-89D9-FE0ED3D2E143}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayBouncePlayer" ID="{410B0A29-D9BD-4CC1-8E68-3B94F6B02604}">
+					<ChildrenList>
+						<Action Name="" ID="{0D54D190-4DD2-4C77-A373-D451B765EA4F}" ShortID="414965013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bounce_player" ID="{1DA3FCC6-D667-4F04-B082-E33120170BD6}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayPeopleScreaming" ID="{418F2D66-266B-4F96-8415-E8EC45C72774}">
+					<ChildrenList>
+						<Action Name="" ID="{2D92E3D2-DCB9-4B41-B4DC-0A744AA3AEFD}" ShortID="791297909">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopPeopleScreaming" ID="{A5FF199E-FD63-4ED9-AA5F-03AECAD2F426}">
+					<ChildrenList>
+						<Action Name="" ID="{5DBD00BC-A077-4F25-997F-76BFC32A1973}" ShortID="650036648">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

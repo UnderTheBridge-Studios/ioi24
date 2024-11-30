@@ -4,7 +4,15 @@
 		<WorkUnit Name="Default Work Unit" ID="{93CC7BE1-F944-4C36-B4E9-B8DD6F7FCC54}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{CEC4B471-2537-4E58-9579-E792A33B88A8}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayPointPlayer2" ID="{E5072F16-D9A0-4110-A829-6F608DBF398E}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayMusic" ID="{6A5B8445-908A-4469-B4B1-FCA3B4F6F29B}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayBounceBuilding" ID="{27CBFA6A-E377-451D-BF4A-FD2F3CDF986F}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayBouncePlayer" ID="{410B0A29-D9BD-4CC1-8E68-3B94F6B02604}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayPointPlayer1" ID="{FF78C025-6561-4ECA-A1E3-CA614DFBE9FF}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopPeopleScreaming" ID="{A5FF199E-FD63-4ED9-AA5F-03AECAD2F426}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayPeopleScreaming" ID="{418F2D66-266B-4F96-8415-E8EC45C72774}" WorkUnitID="{89E4F709-B08E-4407-97BA-AEB268365C0D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

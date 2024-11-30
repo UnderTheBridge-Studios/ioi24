@@ -1,6 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{74306EA9-0018-419A-A1A8-0C2BC18EC89E}" ShortID="43538576">
+					<ChildrenList>
+						<Sound Name="point_player1" ID="{501B3538-4B72-4BE7-94BD-1F0FB906135B}" ShortID="822746033">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coin_001" ID="{06C412B8-24A5-48F4-A287-AFD5A5D8B8B2}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.041257104837399"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.161164529649723"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>coin_001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="488614765"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{84B3752B-E503-44F2-B6B2-34D209C69AA0}" ShortID="950451747">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="ComboPlayer1" ID="{ACC93C27-652F-4661-971C-911FFD8015BC}" WorkUnitID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{3C753E3E-4D96-4E27-9F74-8DD45B688DD0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-489</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>569</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="coin_001" ID="{06C412B8-24A5-48F4-A287-AFD5A5D8B8B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="point_player2" ID="{19518A02-F007-4762-B799-2612B2C58A3D}" ShortID="195427329">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_PowerUp_001" ID="{0968B067-9CBE-4CD4-8E24-C6635D37793B}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0291864138383132"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.237139642203476"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Player_PowerUp_001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="917251637"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D93C4DB5-DFD9-4D5E-B765-87AB77699F40}" ShortID="628556893">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="ComboPlayer2" ID="{78B05279-6D96-476D-B799-D18F75D5176D}" WorkUnitID="{8D8DD407-B9F2-4D2D-BCF5-00939D81C741}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{989DCCC4-F5E5-4345-9F24-5F576B944D9B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-651</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>488</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_PowerUp_001" ID="{0968B067-9CBE-4CD4-8E24-C6635D37793B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="crash_building" ID="{7141BF0F-9F00-4360-B972-6100D9B1FEED}" ShortID="952034885">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ADF4ED63-BAE6-48ED-88EE-3904819447F8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="650"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="breakblock_001" ID="{3E14D8D6-4F23-4A26-A4C9-21DBCBE3CD43}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.4311312257088"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>breakblock_001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="636736344"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="breakblock_001" ID="{3E14D8D6-4F23-4A26-A4C9-21DBCBE3CD43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bounce_building" ID="{DE0D156E-52FE-455D-89D9-FE0ED3D2E143}" ShortID="66975541">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Impact_002" ID="{1764BFBE-5CB2-4A29-9F27-5002BE7A85B6}">
+									<Language>SFX</Language>
+									<AudioFile>Impact_002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232726485"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Impact_002" ID="{1764BFBE-5CB2-4A29-9F27-5002BE7A85B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bounce_player" ID="{1DA3FCC6-D667-4F04-B082-E33120170BD6}" ShortID="101524454">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bonk-Sound-Effect_1" ID="{7C4CBF70-0A77-4BDA-90F9-7B4624BA37FB}">
+									<Language>SFX</Language>
+									<AudioFile>Bonk-Sound-Effect_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="379634924"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bonk-Sound-Effect_1" ID="{7C4CBF70-0A77-4BDA-90F9-7B4624BA37FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" ShortID="400794981">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="people-screaming-sound-effect" ID="{A1863116-5319-4437-9729-D88F12D3E8C1}">
+									<Language>SFX</Language>
+									<AudioFile>people-screaming-sound-effect.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="123580271"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="people-screaming-sound-effect" ID="{A1863116-5319-4437-9729-D88F12D3E8C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
