@@ -97,7 +97,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2313507691276874512}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ffbb33a369adabb44be0c10ec97292de, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a322829882bf6c468900b0075f519c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_playerNumber: 1
+  m_isPlayer1: 1
   m_acceleration: 3
 --- !u!114 &1234177603122996254
 MonoBehaviour:
@@ -193,8 +193,12 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9449a286-5cf5-422d-bc04-0c7aeaee3251
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c5699736-dcba-4f17-8326-9bd7789b8a19
+    m_ActionName: 'Player2/Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

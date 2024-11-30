@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2270929542959940919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6680098, y: -4.8884096, z: -2.2175848}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,4 +44,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fdffc3b23e67074d84b66079c9e29cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingPuntiation: {x: 1, y: 2, z: 4, w: 8}
+  m_buildingPuntuation: 01000000020000000400000008000000
+  m_Player1: {fileID: 0}
+  m_Player2: {fileID: 0}
+  m_maxTime: 10
+  m_UIManager: {fileID: 0}
+  m_WwiseMainMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  m_WwiseGameplay:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  m_WwiseVictory:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  m_WwiseTempo:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

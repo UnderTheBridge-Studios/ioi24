@@ -5,6 +5,7 @@ State	ID	Name	State Group			Notes
 	89505537	Gameplay	GameState			
 	748895195	None	GameState			
 	2607556080	Menu	GameState			
+	2716678721	Victory	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

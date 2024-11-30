@@ -7,11 +7,17 @@ public class TrackBall : MonoBehaviour
     private Transform m_ball;
     private Vector2 m_input;
     private float m_angle;
+
     [SerializeField] private float m_lerpVelocity = 0.2f;
+
+    [SerializeField] private bool m_isPlayer1;
 
     private void Start()
     {
-        m_ball = GameManager.Instance.Player1.transform;
+        if (m_isPlayer1)
+            m_ball = GameManager.Instance.Player1.transform;
+        else
+            m_ball = GameManager.Instance.Player2.transform;
     }
 
     void Update()

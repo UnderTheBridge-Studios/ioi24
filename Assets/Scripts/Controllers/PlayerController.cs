@@ -6,15 +6,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_ball;
 
     [Tooltip("True Player1, False Player2")]
-    [SerializeField] private bool m_playerNumber;
+    [SerializeField] private bool m_isPlayer1;
 
-    [SerializeField]
-    private float m_acceleration;
+    [SerializeField] private float m_acceleration;
 
     private Vector3 m_movement;
     private Vector2 m_input;
 
-    public bool playerNumber => m_playerNumber;
+    public bool IsPlayer1 => m_isPlayer1;
 
     private void Awake()
     {
@@ -37,7 +36,6 @@ public class PlayerController : MonoBehaviour
         return m_ball.linearVelocity;
     }
 
-
     public void Bounce(Vector3 buildPos)
     {
         Vector3 normal;
@@ -58,4 +56,9 @@ public class PlayerController : MonoBehaviour
 
         m_ball.linearVelocity = Vector3.Reflect(m_ball.linearVelocity, normal.normalized); 
     }
+    public void SmallBounce()
+    {
+        m_ball.AddForce(0, 1, 0);
+    }
+
 }
