@@ -1,3 +1,4 @@
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -20,20 +21,20 @@ public class UIManager : MonoBehaviour
 
     public void OnStartButtonPressed()
     {
-        // Tell Game Manager to start game
+        GameManager.Instance.ChangeGameState(GameManager.GameState.Gameplay);
     }
 
     public void OnReplayButtonPressed()
     {
-        // Tell Game Manager to replay game, or restart scene here?
+        GameManager.Instance.Replay();
     }
 
     public void OnQuitButtonPressed()
     {
-        // Tell Game Manager to quit game, or Application.Quit here?
+        GameManager.Instance.Quit();
     }
 
-    public void UpdateTimer(int timeInSeconds)
+    public void UpdateTimer(float timeInSeconds)
     {
         int seconds = ((int)timeInSeconds % 60);
         int minutes = ((int)timeInSeconds / 60);
@@ -68,10 +69,25 @@ public class UIManager : MonoBehaviour
 
     public void ShowVictoryScreen(int playerThatWins)
     {
-        m_PlayerWon.text = "Player " + playerThatWins + " Wins!";
+        if(playerThatWins == -1)
+        {
+            m_PlayerWon.text = "Tie!";
+        }
+        else
+        {
+            m_PlayerWon.text = "Player " + playerThatWins + " Wins!";
+        }
+        
         m_HUD.SetActive(false);
         m_MainMenu.SetActive(false);
         m_VictoryScreen.SetActive(true);
     }
 
+    public void InitializeHUD(int pointsPlayer1, int pointsPlayer2, float timer)
+    {
+        UpdatePointsPlayer1(pointsPlayer1);
+        UpdatePointsPlayer2(pointsPlayer2);
+        UpdateTimer(timer);
+        m_HUD.SetActive(true);
+    }
 }
