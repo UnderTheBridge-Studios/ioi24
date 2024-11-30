@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
                 ChangeGameState(GameState.VictoryScreen);
             }
             m_UIManager.UpdateTimer(m_timer);
-            m_WwiseTempo.SetValue(null, (m_MaxTime - m_timer) / m_MaxTime);
+            m_WwiseTempo.SetValue(null, (m_maxTime - m_timer) / m_maxTime);
         }
     }
 
