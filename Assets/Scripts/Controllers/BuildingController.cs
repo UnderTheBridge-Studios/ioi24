@@ -86,9 +86,9 @@ public class BuildingController : MonoBehaviour
     {
         PlayerController playerController = other.gameObject.GetComponentInParent<PlayerController>();
 
-        if (playerController.GetVelocity().magnitude <=1)
+        if (playerController.GetVelocity().magnitude <=500)
         {
-            //playerController.Bounce();
+            playerController.Bounce(transform.position);
         }
         else
         {
