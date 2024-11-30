@@ -5,7 +5,18 @@ using UnityEngine.ProBuilder.MeshOperations;
 public class BuildingController : MonoBehaviour
 {
     [SerializeField]
-    private bool m_isRandomized;
+    private bool m_randomizeHeight;
+    [SerializeField]
+    private bool m_randomizeRotation;
+
+    [Tooltip("0 to 5")]
+    [SerializeField]
+    private int m_buildingHeight;
+
+    [Tooltip("0 to 4")]
+    [SerializeField]
+    private int m_buildingRotation;
+
 
     [Header("Meshes")]
     [SerializeField]
@@ -35,11 +46,15 @@ public class BuildingController : MonoBehaviour
         m_collider = GetComponent<Collider>();
         m_meshFilter = GetComponent<MeshFilter>();
 
-        if (m_isRandomized)
-        {
+        if (m_randomizeHeight)
             m_height = Random.Range(0, 5);
+        else
+            m_height = m_buildingHeight;
+
+        if (m_randomizeRotation)
             m_rotation = Random.Range(0, 4);
-        }
+        else
+            m_rotation = m_buildingRotation;
 
         SetMesh();
     }

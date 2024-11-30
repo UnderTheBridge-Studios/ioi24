@@ -353,6 +353,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building
       objectReference: {fileID: 0}
+    - target: {fileID: 7298576085802829926, guid: 2749db1fd3eaacd45b7f8b6a617957f6, type: 3}
+      propertyPath: m_buildingHeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298576085802829926, guid: 2749db1fd3eaacd45b7f8b6a617957f6, type: 3}
+      propertyPath: m_randomizeHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298576085802829926, guid: 2749db1fd3eaacd45b7f8b6a617957f6, type: 3}
+      propertyPath: m_buildingRotation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
