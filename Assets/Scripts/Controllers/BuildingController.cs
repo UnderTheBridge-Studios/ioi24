@@ -22,6 +22,11 @@ public class BuildingController : MonoBehaviour
     [Header("Meshes")]
     [SerializeField] private Mesh[] m_buildings;
 
+    [Header("Wwise")]
+    [SerializeField] private AK.Wwise.Event m_WwiseBuildingDestroyedPlayer1;
+    [SerializeField] private AK.Wwise.Event m_WwiseBuildingDestroyedPlayer2;
+    [SerializeField] private AK.Wwise.Event m_WwiseBuildingCollision;
+
     private Collider m_collider;
     private MeshFilter m_meshFilter;
 
@@ -117,6 +122,7 @@ public class BuildingController : MonoBehaviour
         if (playerController.GetVelocity().magnitude <= m_breakVelocity)
         {
             playerController.Bounce(transform.position);
+            m_WwiseBuildingCollision.Post(gameObject);
         }
         else
         {
@@ -126,6 +132,13 @@ public class BuildingController : MonoBehaviour
 
             GameManager.Instance.AddPoints(playerController.IsPlayer1, m_color, m_height);
             GameManager.Instance.RemoveBuilding(this);
+			
+			playerController.SmallBounce();
+			
+            if(playerController.IsPlayer1)
+                m_WwiseBuildingDestroyedPlayer1.Post(gameObject);
+            else
+                m_WwiseBuildingDestroyedPlayer2.Post(gameObject);
         }
     }
 

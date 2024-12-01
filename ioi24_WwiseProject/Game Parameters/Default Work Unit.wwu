@@ -8,7 +8,7 @@
 						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
-						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="ComboPlayer1" ID="{ACC93C27-652F-4661-971C-911FFD8015BC}">
@@ -28,6 +28,7 @@
 						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
 						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>

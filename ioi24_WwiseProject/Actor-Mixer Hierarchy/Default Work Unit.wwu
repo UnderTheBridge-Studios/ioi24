@@ -237,6 +237,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Bonk-Sound-Effect_1" ID="{7C4CBF70-0A77-4BDA-90F9-7B4624BA37FB}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00300982545545719"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0187237825570752"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.216173932138657"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.627246739303842"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Bonk-Sound-Effect_1.wav</AudioFile>
 									<MediaIDList>
@@ -249,6 +256,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" ShortID="400794981">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
@@ -259,6 +269,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="people-screaming-sound-effect" ID="{A1863116-5319-4437-9729-D88F12D3E8C1}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.17860352896986"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.16597959737019"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>people-screaming-sound-effect.wav</AudioFile>
 									<MediaIDList>
@@ -291,7 +307,12 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>0.4003268</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>

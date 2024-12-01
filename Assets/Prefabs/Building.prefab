@@ -131,3 +131,19 @@ MonoBehaviour:
   - {fileID: 7093514604374697652, guid: bffa2c28e2cffd1438098fa35d463fbc, type: 3}
   - {fileID: 1292063410035403202, guid: 890446d36e4bd75428d0ad2273ed9c72, type: 3}
   - {fileID: 2728328271574075383, guid: 379a560dae07c344a9e43198339bc140, type: 3}
+  m_WwiseBuildingDestroyedPlayer1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1912051e2fa4d3146ba834e2f085372e, type: 2}
+  m_WwiseBuildingDestroyedPlayer2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fd98dce98dd5a7745b5775a193cba897, type: 2}
+  m_WwiseBuildingCollision:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc032613f1259924fad43e950711d14e, type: 2}
+  m_WwisePeopleScreaming:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1a2467cca5f526f44af05700f8cb2cd6, type: 2}

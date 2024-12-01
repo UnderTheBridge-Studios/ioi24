@@ -43,12 +43,14 @@ public class UIManager : MonoBehaviour
 
     public void UpdatePointsPlayer1(int currentPoints)
     {
+        m_HUDPointsPlayer1.transform.DOLocalJump(m_HUDPointsPlayer1.transform.localPosition, 10, 1, 0.3f);
         m_HUDPointsPlayer1.text = currentPoints.ToString();
         m_VictoryPointsPlayer1.text = currentPoints.ToString();
     }
 
     public void UpdatePointsPlayer2(int currentPoints)
     {
+        m_HUDPointsPlayer2.transform.DOLocalJump(m_HUDPointsPlayer2.transform.localPosition, 10, 1, 0.3f);
         m_HUDPointsPlayer2.text = currentPoints.ToString();
         m_VictoryPointsPlayer2.text = currentPoints.ToString();
     }
@@ -65,6 +67,9 @@ public class UIManager : MonoBehaviour
         m_HUD.SetActive(true);
         m_MainMenu.SetActive(false);
         m_VictoryScreen.SetActive(false);
+
+        m_HUD.transform.localPosition = new Vector3(m_HUD.transform.localPosition.x, m_HUD.transform.localPosition.y + 200, m_HUD.transform.localPosition.z);
+        m_HUD.transform.DOLocalMoveY(m_HUD.transform.localPosition.y - 200, 1).SetEase(Ease.OutBack);
     }
 
     public void ShowVictoryScreen(int playerThatWins)

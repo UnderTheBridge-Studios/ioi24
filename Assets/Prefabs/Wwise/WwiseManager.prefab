@@ -48,6 +48,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7581d25894d5ad94ab691a37c6e712d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BeatAnimationSpeed: 1
+  decayRateDestruction: 0.2
+  decayRateCombo: 0.1
+  addValueDestruction: 0.8
+  addValueCombo: 0.2
+  m_PeopleScreaming:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1a2467cca5f526f44af05700f8cb2cd6, type: 2}
+  m_ComboPlayer1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cb442ced08c71b44b8fd43a2ce6b9fad, type: 2}
+  m_ComboPlayer2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3351fb87657ecb149bf62e421b6cf93c, type: 2}
 --- !u!114 &3110660217560657891
 MonoBehaviour:
   m_ObjectHideFlags: 0
