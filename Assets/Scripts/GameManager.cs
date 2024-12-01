@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 	public WwiseManager m_WwiseManager;
     [SerializeField] private GameObject m_buildingsGO;
     [SerializeField] private GameObject m_barriersGO;
+    [SerializeField] private InputAction m_enterAction;
+    [SerializeField] private InputAction m_escAction;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
@@ -51,6 +53,24 @@ public class GameManager : MonoBehaviour
     public GameObject Player1 => m_Player1;
     public GameObject Player2 => m_Player2;
     public float speedBoostMuliplier => m_speedBoostMuliplier;
+
+    private void OnEnable()
+    {
+        m_enterAction.Enable();
+        m_enterAction.performed += EnterInput;
+
+        m_escAction.Enable();
+        m_escAction.performed += EscInput;
+    }
+
+    private void OnDisable()
+    {
+        m_enterAction.performed -= EnterInput;
+        m_enterAction.Disable();
+
+        m_escAction.performed -= EscInput;
+        m_escAction.Disable();
+    }
 
     private void Awake()
     {
@@ -149,7 +169,7 @@ public class GameManager : MonoBehaviour
                 {
                     ChangeBuildingColor(randomBuilding);
                     m_colorTimer = 0f;
-                    m_colorChangeTime = Random.Range(1f, 3f);
+                    m_colorChangeTime = Random.Range(0.5f, 2f);
                 }
             }
 
@@ -168,10 +188,10 @@ public class GameManager : MonoBehaviour
         switch(buildingColor)
         {
             case BuildingController.BuildingColor.Gold:
-                pointsMultiplier = 2;
+                pointsMultiplier = 3;
                 break;
             case BuildingController.BuildingColor.Black:
-                pointsMultiplier = -1;
+                pointsMultiplier = -3;
                 break;
             default:
                 pointsMultiplier = 1;
