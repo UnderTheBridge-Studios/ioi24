@@ -270,9 +270,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="people-screaming-sound-effect" ID="{A1863116-5319-4437-9729-D88F12D3E8C1}">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.901887917820411"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.17860352896986"/>
 										<Property Name="TrimEnd" Type="Real64" Value="6.16597959737019"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -313,7 +312,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>1</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-0.3</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>

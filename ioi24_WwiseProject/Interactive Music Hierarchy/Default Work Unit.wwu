@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="MusicPlaylist" ID="{3803B10C-9D8D-48EF-BA56-9C1BE84081FD}" ShortID="117580297">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="135"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
@@ -14,6 +17,9 @@
 						<Reference Name="PlaylistRoot">
 							<Custom>
 								<MusicPlaylistItem Name="" ID="{25E3813F-D828-4C3B-A35C-DEA4C422ECD7}" ShortID="1055659395">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{65DEC138-E31D-4A6C-A492-CC0F1B16A7EA}" ShortID="616501194">
 											<PropertyList>
@@ -113,6 +119,7 @@
 												<CustomState Name="" ID="{6F8789D8-C15B-47DF-ACAB-579B3313185A}" ShortID="132874371">
 													<PropertyList>
 														<Property Name="Highpass" Type="int16" Value="40"/>
+														<Property Name="MakeUpGain" Type="Real64" Value="6"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
