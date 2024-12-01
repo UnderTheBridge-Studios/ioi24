@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4030653465437567917}
   m_Layer: 0
-  m_Name: Concrete
+  m_Name: GrassBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,12 +41,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 4030653465437567917}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 707d212c91af9f84eb9124991895663c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 707d212c91af9f84eb9124991895663c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 707d212c91af9f84eb9124991895663c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 707d212c91af9f84eb9124991895663c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 707d212c91af9f84eb9124991895663c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80,17 +88,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 707d212c91af9f84eb9124991895663c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 71b72eb6e65b45a41988423fe6906fcc, type: 2}
     - target: {fileID: -5754084199372789682, guid: 707d212c91af9f84eb9124991895663c, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -279289091000953144, guid: 67be196a49a17f3468b452cc32e31497, type: 3}
+      objectReference: {fileID: -75550030291932954, guid: cbe6aa90049d36843af06e17cbf8fecf, type: 3}
     - target: {fileID: 919132149155446097, guid: 707d212c91af9f84eb9124991895663c, type: 3}
       propertyPath: m_Name
-      value: Flat_Concrete
+      value: Flat_Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

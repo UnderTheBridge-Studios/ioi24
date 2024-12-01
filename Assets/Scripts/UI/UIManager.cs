@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdatePointsPlayer1(int currentPoints)
     {
+        m_HUDPointsPlayer1.transform.DOComplete();
         m_HUDPointsPlayer1.transform.DOLocalJump(m_HUDPointsPlayer1.transform.localPosition, 10, 1, 0.3f);
         m_HUDPointsPlayer1.text = currentPoints.ToString();
         m_VictoryPointsPlayer1.text = currentPoints.ToString();
@@ -50,6 +51,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdatePointsPlayer2(int currentPoints)
     {
+        m_HUDPointsPlayer2.transform.DOComplete();
         m_HUDPointsPlayer2.transform.DOLocalJump(m_HUDPointsPlayer2.transform.localPosition, 10, 1, 0.3f);
         m_HUDPointsPlayer2.text = currentPoints.ToString();
         m_VictoryPointsPlayer2.text = currentPoints.ToString();

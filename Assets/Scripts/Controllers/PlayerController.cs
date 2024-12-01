@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float m_acceleration;
 
+    [SerializeField] private float m_smallBounceThreshold = 1;
+
+
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.Event m_WwiseCollisionPlayers;
 
@@ -70,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     public void SmallBounce()
     {
-        Debug.Log("SmallBounce");
-        m_ball.AddForce(0, 100, 0);
+        if(transform.position.y < m_smallBounceThreshold)
+            m_ball.AddForce(0, 100, 0);
     }
 }
