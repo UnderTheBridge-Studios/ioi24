@@ -83,3 +83,6 @@ crashlytics-build.properties
 *.user
 *.db
 *.sdf
+
+
+!/Assets/Rendering/Default/PC_RPAsset.asset
