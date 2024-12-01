@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	461064183	PlayPeopleScreaming			\Default Work Unit\PlayPeopleScreaming	
+	1925897751	PlayBounceBuilding			\Default Work Unit\PlayBounceBuilding	
+	3422018549	PlayPointPlayer1			\Default Work Unit\PlayPointPlayer1	
+	3422018550	PlayPointPlayer2			\Default Work Unit\PlayPointPlayer2	
+	3683208001	StopPeopleScreaming			\Default Work Unit\StopPeopleScreaming	
+	3722971456	PlayBouncePlayer			\Default Work Unit\PlayBouncePlayer	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	GameState			\Default Work Unit\GameState	
+
+State	ID	Name	State Group			Notes
+	89505537	Gameplay	GameState			
+	748895195	None	GameState			
+	2607556080	Menu	GameState			
+	2716678721	Victory	GameState			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	307962790	Tempo			\Default Work Unit\Tempo	
+	1381176751	DestructionLevel			\Default Work Unit\DestructionLevel	
+	3161811156	ComboPlayer2			\Default Work Unit\ComboPlayer2	
+	3161811159	ComboPlayer1			\Default Work Unit\ComboPlayer1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	232726485	bounce_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\04\{049C33D1-EB31-DDED-144C-FE4C33E76702}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_building		59620
+	379634924	bounce_player	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\53\{53C09C0C-6CE6-07EE-0FC9-E06FF4235E54}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_player		72612
+	488614765	point_player1	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\73\{73860D89-B3AD-E6D1-17EF-0F6597209BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\point_player1		28588
+	491864704	PP_Silly_Goose_Lite_Loop	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\FC\{FCDE975C-C267-A636-570C-5A7E0C68A900}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\PP_Silly_Goose_Loop_Master\PP_Silly_Goose_Lite_Loop		10035296
+	636736344	crash_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\40\{40C277EF-A02D-AEE8-F4D2-A6D3D72DEBEF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\crash_building		76148
+	917251637	point_player2	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\7A\{7A0255FD-A204-77E8-86C2-537FE1B46FA5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\point_player2		41992
+	1055314346	people-screaming-sound-effect	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\66\{660A39EA-7AF1-BFFA-8EEA-9DCBA3FBD7D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\people-screaming-sound-effect		2376800
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	945339757	PP_Silly_Goose_FULL_Loop	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\92\{929BB01F-9FF2-0CD5-A27C-36BF487C9177}.wem	945339757.wem	\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\PP_Silly_Goose_Loop_Master\PP_Silly_Goose_FULL_Loop	
+

@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{B722DFB6-6D28-4785-B71D-7D797AAC2089}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="GameState" ID="{FE7458F6-A81F-46B9-8428-6C0C30DD88F5}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{3C80F8C4-1C8F-4DF0-8750-878204B14588}"/>
 						<State Name="Menu" ID="{12A2858F-766E-4F06-A52B-1321B468F1DD}"/>

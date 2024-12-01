@@ -44,7 +44,20 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{B4EC6A96-708C-43EF-8DA3-737DF25AC131}">
-											<TransitionInfo/>
+											<PropertyList>
+												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+											</PropertyList>
+											<TransitionInfo>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{34F33177-A557-4D63-9E6A-23C4DE3D2B56}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="0"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
@@ -55,7 +68,7 @@
 					<ChildrenList>
 						<MusicSegment Name="PP_Silly_Goose_Loop_Master" ID="{31B32D7A-1BE8-433F-A9A7-11AC9FC9DBFD}" ShortID="198754770">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="56888.8888888889"/>
+								<Property Name="EndPosition" Type="Real64" Value="57333.3333333334"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-10</Value>
@@ -141,7 +154,7 @@
 																		<MusicClip Name="PP_Silly_Goose_Lite_Loop" ID="{427963D2-9DD3-4836-AFD1-2B80CB46C46A}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="56888.8888888889"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="8.34852720985742"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="PP_Silly_Goose_Lite_Loop" ID="{BE50E6B7-C4D2-49AE-8057-A8CF43E57B27}"/>
