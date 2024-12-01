@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Player2: {fileID: 0}
   m_maxTime: 120
   m_colorChangeTime: 5
+  m_speedBoostMuliplier: 8
   m_UIManager: {fileID: 0}
   m_WwiseManager: {fileID: 0}
   m_buildingsGO: {fileID: 0}

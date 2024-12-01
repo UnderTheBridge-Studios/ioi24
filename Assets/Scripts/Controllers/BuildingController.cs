@@ -83,6 +83,10 @@ public class BuildingController : MonoBehaviour
             m_rotation = m_buildingRotation;
 
         SetBuilding();
+
+
+
+        SetBuildingColor(BuildingColor.Blue);
     }
 
     private void SetBuilding()
@@ -140,7 +144,10 @@ public class BuildingController : MonoBehaviour
         GameManager.Instance.AddPoints(player.IsPlayer1, m_color, m_height);
         GameManager.Instance.RemoveBuilding(this);
 
-        player.SmallBounce();
+        if (m_color == BuildingColor.Blue)
+            player.SpeedBost(m_height);
+        else
+            player.SmallBounce();
 
         if (player.IsPlayer1)
             m_WwiseBuildingDestroyedPlayer1.Post(gameObject);
