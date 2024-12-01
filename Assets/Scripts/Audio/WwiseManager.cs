@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -18,11 +19,14 @@ public class WwiseManager : MonoBehaviour
     [SerializeField] private AK.Wwise.RTPC m_ComboPlayer1;
     [SerializeField] private AK.Wwise.RTPC m_ComboPlayer2;
 
+    [SerializeField] private Material m_BuildingMaterial;
+
     private float levelOfDestruction;
     private float comboPlayer1;
     private float comboPlayer2;
 
     private Coroutine beatCo;
+    private Tween tweenBounce;
 
     private void Awake()
     {
@@ -34,6 +38,7 @@ public class WwiseManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -68,7 +73,6 @@ public class WwiseManager : MonoBehaviour
 
     public void BeatCallback()
     {
-        //Debug.Log("Beat!");
         if(beatCo != null)
         {
             StopCoroutine(beatCo);
@@ -78,12 +82,15 @@ public class WwiseManager : MonoBehaviour
 
     private IEnumerator ExecuteBeatAnimations()
     {
-        float ph = 0.5f * Mathf.PI; // Start at its peak to feel more in sync with the beat
+        float ph = 0;
         float val = 0f;
         while(ph < 2*Mathf.PI)
         {
             ph += Time.deltaTime * m_BeatAnimationSpeed;
-            val += Mathf.Sin(ph);
+            val = Mathf.Cos(ph);
+
+            m_BuildingMaterial.SetFloat("_Bounce", val);
+
             yield return null;
         }
     }

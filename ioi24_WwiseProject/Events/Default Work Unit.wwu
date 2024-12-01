@@ -8,7 +8,7 @@
 						<Action Name="" ID="{F2D45E59-A046-4E48-B640-3B8E2AF91FDA}" ShortID="358276565">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PP_Silly_Goose_Loop_Master" ID="{31B32D7A-1BE8-433F-A9A7-11AC9FC9DBFD}" WorkUnitID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}"/>
+									<ObjectRef Name="MusicPlaylist" ID="{3803B10C-9D8D-48EF-BA56-9C1BE84081FD}" WorkUnitID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

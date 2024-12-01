@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09f7e4898eb0074497baaeb268365c0d
     GuidInternal: 
-    m_lastTime: -8584686266509982621
+    m_lastTime: -8584685558514230360
     List:
     - name: PlayBounceBuilding
       guid: 6afacb2777e31d45bf4afd2f3cdf986f
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 45845b6a8a906944b4b1fca3b4f6f29b
       Path: Events\Default Work Unit\PlayMusic
       maxAttenuation: 0
-      maxDuration: 56.88889
-      minDuration: 56.88889
+      maxDuration: 0
+      minDuration: 0
     - name: PlayPeopleScreaming
       guid: 662d8f416b26964f8415e8ec45c72774
       id: 461064183
