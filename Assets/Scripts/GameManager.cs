@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float m_maxTime;
 
     public UIManager m_UIManager;
+    public WwiseManager m_WwiseManager;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
@@ -100,11 +101,13 @@ public class GameManager : MonoBehaviour
         {
             m_pointsPlayer1 += m_buildingPuntuation[height - 1];
             m_UIManager.UpdatePointsPlayer1(m_pointsPlayer1);
+            m_WwiseManager.UpdatePointsPlayer1(height);
         }
         else
         {
             m_pointsPlayer2 += m_buildingPuntuation[height - 1];
             m_UIManager.UpdatePointsPlayer2(m_pointsPlayer2);
+            m_WwiseManager.UpdatePointsPlayer2(height);
         }
     }
 

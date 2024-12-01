@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe49818c6fe19149abc810d6781da5d, type: 3}
+  m_Name: 78B05279-6D96-476D-B799-D18F75D5176D
+  m_EditorClassIdentifier: 
+  objectName: ComboPlayer2
+  id: 3161811156
+  guid: 78B05279-6D96-476D-B799-D18F75D5176D

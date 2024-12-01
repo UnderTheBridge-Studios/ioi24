@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 290a0b41bdd9c14c8e683b94f6b02604
       Path: Events\Default Work Unit\PlayBouncePlayer
       maxAttenuation: 0
-      maxDuration: 0.88235825
-      minDuration: 0.88235825
+      maxDuration: 0.41107282
+      minDuration: 0.41107282
     - name: PlayMusic
       guid: 45845b6a8a906944b4b1fca3b4f6f29b
       id: 417627684
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 662d8f416b26964f8415e8ec45c72774
       Path: Events\Default Work Unit\PlayPeopleScreaming
       maxAttenuation: 0
-      maxDuration: 40.07764
-      minDuration: 40.07764
+      maxDuration: 0
+      minDuration: 0
     - name: PlayPointPlayer1
       guid: 25c078ff6165ca4ea1e3ca614dfbe9ff
       id: 3422018549
@@ -261,7 +261,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 07d48d8df2b92d4dbcf500939d81c741
     GuidInternal: 
-    m_lastTime: -8584686024139117015
+    m_lastTime: -8584685612819258431
     List:
     - name: ComboPlayer1
       guid: 273cc9ac2f656146971c911ffd8015bc
@@ -444,7 +444,7 @@ MonoBehaviour:
     m_lastTime: -8584687189576058670
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
