@@ -51,7 +51,7 @@ MonoBehaviour:
   m_BeatAnimationSpeed: 1
   decayRateDestruction: 0.2
   decayRateCombo: 0.1
-  addValueDestruction: 0.8
+  addValueDestruction: 0.2
   addValueCombo: 0.2
   m_PeopleScreaming:
     idInternal: 0

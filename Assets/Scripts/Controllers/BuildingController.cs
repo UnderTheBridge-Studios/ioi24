@@ -47,7 +47,7 @@ public class BuildingController : MonoBehaviour
     public BuildingState CurrentState => m_state;
     public BuildingColor CurrentColor => m_color;
 
-    private void Awake()
+    private void Start()
     {
         m_collider = GetComponent<Collider>();
         m_meshFilter = GetComponent<MeshFilter>();

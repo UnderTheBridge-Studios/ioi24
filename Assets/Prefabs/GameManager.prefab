@@ -48,7 +48,11 @@ MonoBehaviour:
   m_Player1: {fileID: 0}
   m_Player2: {fileID: 0}
   m_maxTime: 10
+  m_colorChangeTime: 5
   m_UIManager: {fileID: 0}
+  m_WwiseManager: {fileID: 0}
+  m_buildingsGO: {fileID: 0}
+  m_barriersGO: {fileID: 0}
   m_WwiseMainMenu:
     idInternal: 0
     valueGuidInternal: 
