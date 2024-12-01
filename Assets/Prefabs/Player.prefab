@@ -161,6 +161,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 425c3ebfa75a23f408801a395bf19ff3, type: 2}
+  m_HitStopTime: 0.01
+  m_SpeedTimeHitStopTime: 0.01
 --- !u!114 &1234177603122996254
 MonoBehaviour:
   m_ObjectHideFlags: 0
