@@ -18045,6 +18045,38 @@ PrefabInstance:
       propertyPath: m_WwiseManager
       value: 
       objectReference: {fileID: 1457602587}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_escAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_enterAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_escAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 9582e5a7-c0be-434c-8bfb-e1efa8a0542a
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_enterAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 96a3e000-d0cf-493e-82f9-feeeaff30a06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_escAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonEast
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_enterAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonSouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_escAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Esc
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_enterAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Enter
+      objectReference: {fileID: 0}
     - target: {fileID: 8864234105795825506, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
