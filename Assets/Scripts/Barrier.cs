@@ -19,7 +19,7 @@ public class Barrier : MonoBehaviour
     {
         nPlayers--;
         if(!(nPlayers>0))
-            m_barrierMesh2.transform.DOLocalMoveY(0, 0.2f);
+            m_barrierMesh2.transform.DOLocalMoveY(-1, 0.2f);
             //m_barrierMesh.transform.DOLocalRotate(new Vector3(0, 45, 0), 0.2f);
     }
 }
