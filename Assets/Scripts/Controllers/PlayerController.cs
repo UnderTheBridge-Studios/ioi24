@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 m_movement;
     private Vector2 m_input;
 
+    private bool IsInHitStop;
+
     public bool IsPlayer1 => m_isPlayer1;
 
     private void Awake()
@@ -61,6 +63,12 @@ public class PlayerController : MonoBehaviour
         }
 
         m_ball.linearVelocity = Vector3.Reflect(m_ball.linearVelocity, normal.normalized); 
+    }
+
+    public void SpeedBost(float height)
+    {
+        m_ball.linearVelocity = m_ball.linearVelocity.normalized * GameManager.Instance.speedBoostMuliplier;
+        IsInHitStop = true;
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject m_Player2;
     [SerializeField] private float m_maxTime;
     [SerializeField] private float m_colorChangeTime;
+    [SerializeField] private float m_speedBoostMuliplier;
 
     [Header("References")]
     public UIManager m_UIManager;
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     public float velocityPlayer2 => m_velocityPlayer2;
     public GameObject Player1 => m_Player1;
     public GameObject Player2 => m_Player2;
+    public float speedBoostMuliplier => m_speedBoostMuliplier;
 
     private void Awake()
     {
