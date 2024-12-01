@@ -32,10 +32,16 @@ public class TrackBall : MonoBehaviour
 
     void Update()
     {
-        if (m_isPlayer1)
-            m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer1) / 8, 1);
-        else
-            m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer2) / 8, 1);
+        //if (m_isPlayer1){
+        //    m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer1) / 8, 1);
+        //    Debug.Log("m_velocity: " + m_velocity);
+        //}
+        //else
+        //    m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer2) / 8, 1);
+
+        //m_velocity *= 0.1f;
+        //m_velocity = 1f;
+
 
         m_materialBlock.SetFloat("_SSpeed", m_velocity);
         m_materialBlock.SetFloat("_SAmount", m_movementAmount);
@@ -48,6 +54,13 @@ public class TrackBall : MonoBehaviour
 
     public void Rotate(InputAction.CallbackContext context)
     {
+
+        if (context.performed)
+            m_velocity = 0.8f;
+        if (context.canceled)
+            m_velocity = 0f;
+
+
         m_input = context.ReadValue<Vector2>();
         m_angle = Vector2.SignedAngle(m_input, Vector2.up);
     }
