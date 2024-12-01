@@ -109,18 +109,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6467014fcf69bf48b0b0c22811aeb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isGold: 0
-  m_isBlack: 0
-  m_isBlue: 0
+  m_colorTime: 10
   m_randomizeHeight: 1
   m_randomizeRotation: 1
-  m_buildingHeight: 0
-  m_buildingRotation: 0
   m_velocities:
   - 0.1
   - 2
   - 4
   - 6
+  m_heightChances:
+  - 0.1
+  - 0.4
+  - 0.75
+  - 0.9
+  m_buildingHeight: 0
+  m_buildingRotation: 0
   m_buildings:
   - {fileID: -279289091000953144, guid: 67be196a49a17f3468b452cc32e31497, type: 3}
   - {fileID: 2606347287173655772, guid: a6b02cb27c88f9b478c34e395e603ca2, type: 3}

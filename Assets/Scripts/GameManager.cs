@@ -1,17 +1,24 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [Header("Settings")]
     [SerializeField] private int[] m_buildingPuntuation;
-
     [SerializeField] private GameObject m_Player1;
     [SerializeField] private GameObject m_Player2;
     [SerializeField] private float m_maxTime;
+    [SerializeField] private float m_colorChangeTime;
 
+    [Header("References")]
     public UIManager m_UIManager;
+    [SerializeField] private GameObject m_buildingsGO;
+    [SerializeField] private GameObject m_barriersGO;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
@@ -24,7 +31,11 @@ public class GameManager : MonoBehaviour
     private int m_pointsPlayer1;
     private int m_pointsPlayer2;
     private float m_timer;
+    private float m_colorTimer;
     private GameState m_gameState;
+
+    private List<BuildingController> m_buildings;
+    private Transform[] m_barriers;
 
     public GameObject Player1 => m_Player1;
     public GameObject Player2 => m_Player2;
@@ -35,6 +46,9 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         else
             Instance = this;
+
+        m_buildings = m_buildingsGO.GetComponentsInChildren<BuildingController>().ToList();
+        m_barriers = m_barriersGO.GetComponentsInChildren<Transform>();
     }
 	
     private void Start()
@@ -84,6 +98,8 @@ public class GameManager : MonoBehaviour
         if(m_gameState == GameState.Gameplay)
         {
             m_timer -= Time.deltaTime;
+            m_colorTimer += Time.deltaTime;
+
             if(m_timer < 0f)
             {
                 m_timer = 0f;
@@ -91,21 +107,66 @@ public class GameManager : MonoBehaviour
             }
             m_UIManager.UpdateTimer(m_timer);
             m_WwiseTempo.SetValue(null, (m_maxTime - m_timer) / m_maxTime);
+
+            if (m_colorTimer >= m_colorChangeTime)
+            {
+                int randomIndex = Random.Range(0, m_buildings.Count);
+                BuildingController randomBuilding = m_buildings[randomIndex];
+
+                if (randomBuilding.CurrentState == BuildingController.BuildingState.Default)
+                {
+                    ChangeBuildingColor(randomBuilding);
+                    m_colorTimer = 0f;
+                    m_colorChangeTime = Random.Range(3f, 6f);
+                }
+            }
         }
     }
 
-    public void AddPoints(bool player, int height)
+    public void AddPoints(bool isPlayer1, BuildingController.BuildingColor buildingColor, int height)
     {
-        if (player)
+        int pointsMultiplier = 1;
+        
+        switch(buildingColor)
         {
-            m_pointsPlayer1 += m_buildingPuntuation[height - 1];
+            case BuildingController.BuildingColor.Gold:
+                pointsMultiplier = 2;
+                break;
+            case BuildingController.BuildingColor.Black:
+                pointsMultiplier = -1;
+                break;
+            default:
+                pointsMultiplier = 1;
+                break;
+        }
+
+        if (isPlayer1)
+        {
+            m_pointsPlayer1 += m_buildingPuntuation[height - 1] * pointsMultiplier;
             m_UIManager.UpdatePointsPlayer1(m_pointsPlayer1);
         }
         else
         {
-            m_pointsPlayer2 += m_buildingPuntuation[height - 1];
+            m_pointsPlayer2 += m_buildingPuntuation[height - 1] * pointsMultiplier;
             m_UIManager.UpdatePointsPlayer2(m_pointsPlayer2);
         }
+    }
+
+    private void ChangeBuildingColor(BuildingController building)
+    {
+        float chances = Random.Range(0f, 1f);
+
+        if (chances <= 0.5f)
+            building.SetBuildingColor(BuildingController.BuildingColor.Blue);
+        else if (0.5f < chances && chances <= 0.75f)
+            building.SetBuildingColor(BuildingController.BuildingColor.Gold);
+        else if (0.75f < chances && chances <= 1f)
+            building.SetBuildingColor(BuildingController.BuildingColor.Black);
+    }
+
+    public void RemoveBuilding(BuildingController building)
+    {
+        m_buildings.Remove(building);
     }
 
     public void Replay()
