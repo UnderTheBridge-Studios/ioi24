@@ -4963,6 +4963,11 @@ MonoBehaviour:
   - 0.4
   - 0.75
   - 0.9
+  m_gold: {r: 1, g: 0.9366572, b: 0, a: 1}
+  m_black: {r: 1, g: 0.06039843, b: 0, a: 1}
+  m_blue: {r: 0, g: 0.44112706, b: 1, a: 1}
+  m_player1: {r: 1, g: 0.6603337, b: 0.047169685, a: 1}
+  m_player2: {r: 0, g: 0.76793677, b: 0.8742138, a: 1}
   m_buildingHeight: 0
   m_buildingRotation: 0
   m_buildings:

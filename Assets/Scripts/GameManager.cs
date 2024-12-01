@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AK.Wwise.State m_WwiseGameplay;
     [SerializeField] private AK.Wwise.State m_WwiseVictory;
     [SerializeField] private AK.Wwise.RTPC m_WwiseTempo;
+    [SerializeField] private AK.Wwise.Event m_WwiseAlarmTimer;
 
     public enum GameState { MainMenu, Gameplay, VictoryScreen}
 
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     private float m_timer;
     private float m_colorTimer;
     private GameState m_gameState;
+    private bool alarmEventPosted;
 
     private float m_velocityPlayer1;
     private float m_velocityPlayer2;
@@ -82,6 +85,7 @@ public class GameManager : MonoBehaviour
                 m_pointsPlayer1 = 0;
                 m_pointsPlayer2 = 0;
                 m_timer = m_maxTime;
+                alarmEventPosted = false;
 
                 m_Player1.SetActive(true);
                 m_Player2?.SetActive(true);
@@ -97,6 +101,7 @@ public class GameManager : MonoBehaviour
                 int result = m_pointsPlayer1 == m_pointsPlayer2 ? -1 : m_pointsPlayer1 > m_pointsPlayer2 ? 1 : 2;
                 m_UIManager.ShowVictoryScreen(result);
                 m_WwiseVictory.SetValue();
+                m_WwiseAlarmTimer.Post(gameObject);
                 break;
         }
     }
@@ -121,12 +126,18 @@ public class GameManager : MonoBehaviour
                 int randomIndex = Random.Range(0, m_buildings.Count);
                 BuildingController randomBuilding = m_buildings[randomIndex];
 
-                if (randomBuilding.CurrentState == BuildingController.BuildingState.Default)
+                if (randomBuilding.CurrentColor == BuildingController.BuildingColor.Default)
                 {
                     ChangeBuildingColor(randomBuilding);
                     m_colorTimer = 0f;
                     m_colorChangeTime = Random.Range(1f, 3f);
                 }
+            }
+
+            if(m_timer < 10.9f && !alarmEventPosted)
+            {
+                alarmEventPosted = true;
+                m_WwiseAlarmTimer.Post(gameObject);
             }
         }
     }
@@ -195,6 +206,20 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void EnterInput(InputAction.CallbackContext context)
+    {
+        if (m_gameState == GameState.MainMenu)
+            ChangeGameState(GameState.Gameplay);
+    }
+
+    public void EscInput(InputAction.CallbackContext context)
+    {
+        if (m_gameState == GameState.Gameplay)
+            Replay();
+        else
+            Quit();
     }
 
     public void Quit()

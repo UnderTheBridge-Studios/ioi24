@@ -157,8 +157,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fad80def41d15d44ba61e47d4ec1c189, type: 2}
-  m_HitStopTime: 0.025
-  m_SpeedTimeHitStopTime: 0.1
+  m_WwiseSpeedBoost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 425c3ebfa75a23f408801a395bf19ff3, type: 2}
 --- !u!114 &1234177603122996254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +203,19 @@ MonoBehaviour:
     m_ActionId: 9449a286-5cf5-422d-bc04-0c7aeaee3251
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 32461260488891698}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c5699736-dcba-4f17-8326-9bd7789b8a19
     m_ActionName: 'Player2/Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   m_NeverAutoSwitchControlSchemes: 0

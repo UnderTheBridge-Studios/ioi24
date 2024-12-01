@@ -68,6 +68,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_barrierMesh: {fileID: 2903533027456446280}
   m_barrierMesh2: {fileID: 3194192612071729560}
+  m_WwiseBarrierOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0f699015328c0b2468ae1665c08610d3, type: 2}
+  m_WwiseBarrierClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a9f1067e25167114c902fc87af2af304, type: 2}
 --- !u!1 &7354501510685262121
 GameObject:
   m_ObjectHideFlags: 0

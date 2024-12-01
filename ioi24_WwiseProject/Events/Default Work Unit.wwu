@@ -97,6 +97,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlaySpeedBoost" ID="{D7DF05B3-DB0D-4B06-8537-A8BAE7B5DA1D}">
+					<ChildrenList>
+						<Action Name="" ID="{3E10297F-654C-40AE-987B-32604F059BDA}" ShortID="643353396">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="speed_boost" ID="{1AF3C4FB-1C25-4AC3-9DE9-7B07C3FF8960}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayBorderAppear" ID="{01B91D0A-8C97-4B6D-94AA-32FEEF96BD28}">
+					<ChildrenList>
+						<Action Name="" ID="{249B57AC-79D2-4D63-9497-86BED7F19F62}" ShortID="944618120">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Border_appear" ID="{06B77D3A-B64C-4F59-BD91-B2625B2B4AC1}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayBorderDisappear" ID="{01808713-60EE-4A80-869D-FFCFB80D7BD2}">
+					<ChildrenList>
+						<Action Name="" ID="{B283E5A9-01E6-445E-8961-74053C357890}" ShortID="1063369110">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Border_disappear" ID="{60C26FFD-99FF-46CC-929A-895DE1362A54}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayWinTune" ID="{57401C14-1A09-4E7A-B163-1C3BF6695C6D}">
+					<ChildrenList>
+						<Action Name="" ID="{F8BCB27A-16DB-42E0-9E9B-D3063535437D}" ShortID="928645523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PP_Win_Stinger" ID="{4B739220-08F3-4ECC-B5AD-F4CA4E66E1F2}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Clock_Alarm" ID="{7BF39410-E791-4D6D-A9A0-DF9A6EE301DF}">
+					<ChildrenList>
+						<Action Name="" ID="{FCA778BB-D413-4DD6-B15D-9E717FCAA127}" ShortID="263564949">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clock-Alarm" ID="{3DF802FC-03B7-4440-89CB-F65810359A00}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

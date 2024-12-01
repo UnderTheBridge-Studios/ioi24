@@ -1,11 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	PlayMusic			\Default Work Unit\PlayMusic	
 	461064183	PlayPeopleScreaming			\Default Work Unit\PlayPeopleScreaming	
+	481230709	PlayWinTune			\Default Work Unit\PlayWinTune	
+	1435390134	PlayBorderAppear			\Default Work Unit\PlayBorderAppear	
 	1925897751	PlayBounceBuilding			\Default Work Unit\PlayBounceBuilding	
+	2911875409	PlaySpeedBoost			\Default Work Unit\PlaySpeedBoost	
+	3002365032	PlayBorderDisappear			\Default Work Unit\PlayBorderDisappear	
 	3422018549	PlayPointPlayer1			\Default Work Unit\PlayPointPlayer1	
 	3422018550	PlayPointPlayer2			\Default Work Unit\PlayPointPlayer2	
 	3683208001	StopPeopleScreaming			\Default Work Unit\StopPeopleScreaming	
 	3722971456	PlayBouncePlayer			\Default Work Unit\PlayBouncePlayer	
+	4045129230	Play_Clock_Alarm			\Default Work Unit\Play_Clock_Alarm	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	4091656514	GameState			\Default Work Unit\GameState	
@@ -23,13 +28,20 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3161811159	ComboPlayer1			\Default Work Unit\ComboPlayer1	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	123580271	people-screaming-sound-effect	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\32\{3221B87C-F73E-07E6-1FFD-2DD21447362C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\people-screaming-sound-effect		1087824
+	67982112	Block-Slide-2	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\26\{267FE1BC-F21F-425F-3FC9-4565BB39CE1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Border_appear\Block-Slide-2		43296
+	172051393	Block-Slide-3	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\44\{447B050F-DA34-51C6-C75A-8E202B4281D0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Border_disappear\Block-Slide-3		46048
 	232726485	bounce_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\04\{049C33D1-EB31-DDED-144C-FE4C33E76702}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_building		59620
-	379634924	bounce_player	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\F2\{F2AE6B42-AAE0-CAD0-FB89-0A7E5D052107}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_player		72612
+	294087566	Clock-Alarm	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\B1\{B1DDC60C-203D-C749-D3B5-B91F34A79A92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Clock-Alarm		350304
+	379634924	bounce_player	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\53\{53C09C0C-6CE6-07EE-0FC9-E06FF4235E54}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_player		72612
+	452810040	speed_boost	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\2C\{2CC65F6E-D6AA-93B1-11C5-1435FF505D96}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\speed_boost		61568
+	483273838	PP_Win_Stinger	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\CE\{CEF5BFF4-EB05-3396-EADD-63953786BF20}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PP_Win_Stinger		471352
 	488614765	point_player1	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\73\{73860D89-B3AD-E6D1-17EF-0F6597209BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\point_player1		28588
 	491864704	PP_Silly_Goose_Lite_Loop	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\FC\{FCDE975C-C267-A636-570C-5A7E0C68A900}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\PP_Silly_Goose_Loop_Master\PP_Silly_Goose_Lite_Loop		10035296
 	636736344	crash_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\40\{40C277EF-A02D-AEE8-F4D2-A6D3D72DEBEF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\crash_building		76148
+	732824370	Block-Slide-4	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\10\{1046CE72-7CCE-CCEF-BAC4-49ACFE875585}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Border_appear\Block-Slide-4		37928
 	917251637	point_player2	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\7A\{7A0255FD-A204-77E8-86C2-537FE1B46FA5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\point_player2		41992
+	947127354	Block-Slide-1	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\D4\{D4E12B4B-847E-BEC7-BA31-14A2B486FE6E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Border_appear\Block-Slide-1		39084
+	1055314346	people-screaming-sound-effect	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\66\{660A39EA-7AF1-BFFA-8EEA-9DCBA3FBD7D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\people-screaming-sound-effect		2376800
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	945339757	PP_Silly_Goose_FULL_Loop	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\92\{929BB01F-9FF2-0CD5-A27C-36BF487C9177}.wem	945339757.wem	\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\PP_Silly_Goose_Loop_Master\PP_Silly_Goose_FULL_Loop	

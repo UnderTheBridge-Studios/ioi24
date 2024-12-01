@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9ebcf19dca1154439de51eed84665b8c
     GuidInternal: 
-    m_lastTime: -8584686266507798034
+    m_lastTime: -8584685316115734816
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e17bcc9344f9364cb4e9b8dd6f7fcc54
     GuidInternal: 
-    m_lastTime: -8584686266505478234
+    m_lastTime: -8584685339956850807
     List:
     - name: Main
       guid: 71b4c4ce3725584e9579e792a33b88a8
@@ -128,8 +128,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09f7e4898eb0074497baaeb268365c0d
     GuidInternal: 
-    m_lastTime: -8584685558514230360
+    m_lastTime: -8584685340092031226
     List:
+    - name: Play_Clock_Alarm
+      guid: 1094f37b91e76d4da9a0df9a6ee301df
+      id: 4045129230
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: Play_Clock_Alarm
+        ObjectType: 3
+        guid: 1094f37b91e76d4da9a0df9a6ee301df
+      Path: Events\Default Work Unit\Play_Clock_Alarm
+      maxAttenuation: 0
+      maxDuration: 1.824
+      minDuration: 1.824
+    - name: PlayBorderAppear
+      guid: 0a1db901978c6d4b94aa32feef96bd28
+      id: 1435390134
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayBorderAppear
+        ObjectType: 3
+        guid: 0a1db901978c6d4b94aa32feef96bd28
+      Path: Events\Default Work Unit\PlayBorderAppear
+      maxAttenuation: 0
+      maxDuration: 0.2254768
+      minDuration: 0.18563351
+    - name: PlayBorderDisappear
+      guid: 13878001ee60804a869dffcfb80d7bd2
+      id: 3002365032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayBorderDisappear
+        ObjectType: 3
+        guid: 13878001ee60804a869dffcfb80d7bd2
+      Path: Events\Default Work Unit\PlayBorderDisappear
+      maxAttenuation: 0
+      maxDuration: 0.26969194
+      minDuration: 0.22203553
     - name: PlayBounceBuilding
       guid: 6afacb2777e31d45bf4afd2f3cdf986f
       id: 1925897751
@@ -213,8 +264,8 @@ MonoBehaviour:
         guid: 25c078ff6165ca4ea1e3ca614dfbe9ff
       Path: Events\Default Work Unit\PlayPointPlayer1
       maxAttenuation: 0
-      maxDuration: 0.6097116
-      minDuration: 0.29617715
+      maxDuration: 0.5127043
+      minDuration: 0.3625367
     - name: PlayPointPlayer2
       guid: 162f07e5a0d91041a8296f608dbf398e
       id: 3422018550
@@ -230,8 +281,42 @@ MonoBehaviour:
         guid: 162f07e5a0d91041a8296f608dbf398e
       Path: Events\Default Work Unit\PlayPointPlayer2
       maxAttenuation: 0
-      maxDuration: 0.6097116
-      minDuration: 0.29617715
+      maxDuration: 0.5127043
+      minDuration: 0.3625367
+    - name: PlaySpeedBoost
+      guid: b305dfd70ddb064b8537a8bae7b5da1d
+      id: 2911875409
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlaySpeedBoost
+        ObjectType: 3
+        guid: b305dfd70ddb064b8537a8bae7b5da1d
+      Path: Events\Default Work Unit\PlaySpeedBoost
+      maxAttenuation: 0
+      maxDuration: 0.3484846
+      minDuration: 0.3484846
+    - name: PlayWinTune
+      guid: 141c4057091a7a4eb1631c3bf6695c6d
+      id: 481230709
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayWinTune
+        ObjectType: 3
+        guid: 141c4057091a7a4eb1631c3bf6695c6d
+      Path: Events\Default Work Unit\PlayWinTune
+      maxAttenuation: 0
+      maxDuration: 2.6715274
+      minDuration: 2.6715274
     - name: StopPeopleScreaming
       guid: 9e19ffa563fdd94eaa5f03aecad2f426
       id: 3683208001
@@ -331,7 +416,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b6df22b7286d8547b71d7d797aac2089
     GuidInternal: 
-    m_lastTime: -8584686060039139120
+    m_lastTime: -8584685359478800234
     List:
     - name: GameState
       guid: f65874fe1fa8b94684286c0c30dd88f5
@@ -444,7 +529,7 @@ MonoBehaviour:
     m_lastTime: -8584687189576058670
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
+  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
