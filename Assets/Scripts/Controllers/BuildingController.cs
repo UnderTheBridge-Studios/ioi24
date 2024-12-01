@@ -61,13 +61,13 @@ public class BuildingController : MonoBehaviour
 
             if(chances <= m_heightChances[0])
                 m_height = 0;
-            else if (m_heightChances[0] > chances && chances <= m_heightChances[0])
+            else if (chances > m_heightChances[0] && chances <= m_heightChances[1])
                 m_height = 1;
-            else if (m_heightChances[1] > chances && chances <= m_heightChances[2])
+            else if (chances > m_heightChances[1] && chances <= m_heightChances[2])
                 m_height = 2;
-            else if (m_heightChances[2] > chances && chances <= m_heightChances[3])
+            else if (chances > m_heightChances[2] && chances <= m_heightChances[3])
                 m_height = 3;
-            else if (m_heightChances[3] > chances && chances <= 1f)
+            else if (chances > m_heightChances[3] && chances <= 1f)
                 m_height = 4;
         }
         else
@@ -101,16 +101,16 @@ public class BuildingController : MonoBehaviour
         switch (m_rotation)
         {
             case 0:
-                transform.localRotation = Quaternion.Euler(0f ,0f ,0f );
+                transform.localRotation = Quaternion.Euler(0f ,45f ,0f );
                 break;
             case 1:
-                transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                transform.localRotation = Quaternion.Euler(0f, 135f, 0f);
                 break;
             case 2:
-                transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+                transform.localRotation = Quaternion.Euler(0f, 225f, 0f);
                 break;
             case 3:
-                transform.localRotation = Quaternion.Euler(0f, -90f, 0f);
+                transform.localRotation = Quaternion.Euler(0f, 315f, 0f);
                 break;
         }
     }
