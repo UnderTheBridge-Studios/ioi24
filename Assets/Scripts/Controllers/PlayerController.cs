@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float m_acceleration;
 
+    [Header("Wwise")]
+    [SerializeField] private AK.Wwise.Event m_WwiseCollisionPlayers;
+
     private Vector3 m_movement;
     private Vector2 m_input;
 
@@ -56,10 +59,18 @@ public class PlayerController : MonoBehaviour
 
         m_ball.linearVelocity = Vector3.Reflect(m_ball.linearVelocity, normal.normalized); 
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(m_isPlayer1 && collision.gameObject.TryGetComponent<PlayerController>(out var other))
+        {
+            m_WwiseCollisionPlayers.Post(gameObject);
+        }
+    }
+
     public void SmallBounce()
     {
         Debug.Log("SmallBounce");
         m_ball.AddForce(0, 100, 0);
     }
-
 }

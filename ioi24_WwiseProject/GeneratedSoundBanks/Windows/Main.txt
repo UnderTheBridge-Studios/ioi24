@@ -23,9 +23,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3161811159	ComboPlayer1			\Default Work Unit\ComboPlayer1	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	123580271	people-screaming-sound-effect	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\B4\{B462EDD0-E96D-919B-F973-695793BE26D6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\people-screaming-sound-effect		7069792
+	123580271	people-screaming-sound-effect	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\DA\{DAEAA3C3-FD9E-E026-444A-2CDA11265239}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\people-screaming-sound-effect		879872
 	232726485	bounce_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\04\{049C33D1-EB31-DDED-144C-FE4C33E76702}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_building		59620
-	379634924	bounce_player	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\12\{12C6A1C3-20AC-112F-44B0-C58D6A32FAF7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_player		155744
+	379634924	bounce_player	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\F2\{F2AE6B42-AAE0-CAD0-FB89-0A7E5D052107}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\bounce_player		72612
 	488614765	point_player1	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\73\{73860D89-B3AD-E6D1-17EF-0F6597209BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\point_player1		28588
 	491864704	PP_Silly_Goose_Lite_Loop	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\FC\{FCDE975C-C267-A636-570C-5A7E0C68A900}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\PP_Silly_Goose_Loop_Master\PP_Silly_Goose_Lite_Loop		10035296
 	636736344	crash_building	C:\GitHub\ioi24\ioi24_WwiseProject\.cache\40\{40C277EF-A02D-AEE8-F4D2-A6D3D72DEBEF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\crash_building		76148

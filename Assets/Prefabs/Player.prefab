@@ -152,6 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isPlayer1: 1
   m_acceleration: 3
+  m_WwiseCollisionPlayers:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fad80def41d15d44ba61e47d4ec1c189, type: 2}
 --- !u!114 &1234177603122996254
 MonoBehaviour:
   m_ObjectHideFlags: 0
