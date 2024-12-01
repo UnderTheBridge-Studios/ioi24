@@ -13301,6 +13301,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4bbd3772f4c543469ae6a37127160ce, type: 3}
+--- !u!1 &539536645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5522364664910770298, guid: 10b62877f7bcc28489f7062fdfd5b8c7, type: 3}
+  m_PrefabInstance: {fileID: 868817751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &539919383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18029,6 +18034,18 @@ PrefabInstance:
       propertyPath: m_Player2
       value: 
       objectReference: {fileID: 959520845}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_maxTime
+      value: 91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_hamster1
+      value: 
+      objectReference: {fileID: 1083315697}
+    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
+      propertyPath: m_hamster2
+      value: 
+      objectReference: {fileID: 539536645}
     - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
       propertyPath: m_UIManager
       value: 
@@ -25566,6 +25583,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a8142a1b2cee34f94f1d2a045135cc, type: 3}
+--- !u!1 &1083315697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6070955811051437260, guid: 042732b114e0a854285ef129120b63cc, type: 3}
+  m_PrefabInstance: {fileID: 1681270416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1085067231
 PrefabInstance:
   m_ObjectHideFlags: 0

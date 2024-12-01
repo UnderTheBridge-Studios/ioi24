@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject m_barriersGO;
     [SerializeField] private InputAction m_enterAction;
     [SerializeField] private InputAction m_escAction;
+    [SerializeField] private GameObject m_hamster1;
+    [SerializeField] private GameObject m_hamster2;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
@@ -129,6 +131,8 @@ public class GameManager : MonoBehaviour
                 m_UIManager.ShowVictoryScreen(result);
                 m_WwiseVictory.SetValue();
                 m_WwiseAlarmTimer.Post(gameObject);
+                m_hamster1.SetActive(false);
+                m_hamster2.SetActive(false);
                 break;
         }
     }
