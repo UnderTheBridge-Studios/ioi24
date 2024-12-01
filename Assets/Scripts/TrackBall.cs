@@ -36,8 +36,7 @@ public class TrackBall : MonoBehaviour
             m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer1) / 8, 1);
         else
             m_velocity = Mathf.Min((GameManager.Instance.velocityPlayer2) / 8, 1);
-        if (m_isPlayer1)
-            Debug.Log("m_velocity: " + m_velocity + " m_movementAmount: " + m_movementAmount);
+
         m_materialBlock.SetFloat("_SSpeed", m_velocity);
         m_materialBlock.SetFloat("_SAmount", m_movementAmount);
         m_meshRenderer.SetPropertyBlock(m_materialBlock);
