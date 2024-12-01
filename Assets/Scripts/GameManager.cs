@@ -90,6 +90,12 @@ public class GameManager : MonoBehaviour
                 m_Player1.SetActive(true);
                 m_Player2?.SetActive(true);
 
+                m_Player1.GetComponent<PlayerController>().DisablePhysics();
+                m_Player2.GetComponent<PlayerController>().DisablePhysics();
+
+                Invoke("EnableControls", 2.5f);
+
+
                 m_UIManager.InitializeHUD(m_pointsPlayer1, m_pointsPlayer2, m_timer);
                 m_UIManager.ShowHUD();
                 m_WwiseGameplay.SetValue();
@@ -105,6 +111,16 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    private void EnableControls()
+    {
+        m_Player1.GetComponent<PlayerController>().EnableMaterial();
+        m_Player1.GetComponent<PlayerController>().EnableInput();
+
+        m_Player2.GetComponent<PlayerController>().EnableMaterial();
+        m_Player2.GetComponent<PlayerController>().EnableInput();
+    }
+
 
     private void Update()
     {

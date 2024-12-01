@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     private bool m_HasBounceInThisFrame;
     private Vector3 m_saveVelocity;
 
+    private PhysicsMaterial material;
+    private bool enableInput;
+
     public bool IsPlayer1 => m_isPlayer1;
 
     private void Awake()
@@ -46,6 +49,9 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (!enableInput)
+            return;
+
         m_input = context.ReadValue<Vector2>();
         m_movement = new Vector3(m_input.x, 0.0f, m_input.y);
     }
@@ -102,6 +108,21 @@ public class PlayerController : MonoBehaviour
         {
             m_WwiseCollisionPlayers.Post(gameObject);
         }
+    }
+
+    public void DisablePhysics()
+    {
+        material = m_ball.GetComponent<SphereCollider>().material;
+        m_ball.GetComponent<SphereCollider>().material = null;
+    }
+
+    public void EnableMaterial()
+    {
+        m_ball.GetComponent<SphereCollider>().material = material;
+    }
+    public void EnableInput()
+    {
+        enableInput = true;
     }
 
     public void SmallBounce(float height)
