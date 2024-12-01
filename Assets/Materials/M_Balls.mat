@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Base01 1
+  m_Name: M_Balls
   m_Shader: {fileID: -6465566751694194690, guid: c9a03c7386aa9ee438dea32746ba9c51, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -87,6 +87,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 0
+    - _Alpha: 0.13
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
