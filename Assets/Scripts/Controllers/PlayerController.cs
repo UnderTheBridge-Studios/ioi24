@@ -67,4 +67,10 @@ public class PlayerController : MonoBehaviour
             m_WwiseCollisionPlayers.Post(gameObject);
         }
     }
+
+    public void SmallBounce()
+    {
+        Debug.Log("SmallBounce");
+        m_ball.AddForce(0, 100, 0);
+    }
 }

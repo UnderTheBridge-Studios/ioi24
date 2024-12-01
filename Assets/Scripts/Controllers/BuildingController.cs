@@ -112,6 +112,7 @@ public class BuildingController : MonoBehaviour
         }
         else
         {
+            playerController.SmallBounce();
             GameManager.Instance.AddPoints(playerController.IsPlayer1, m_height);
             m_collider.enabled = false;
             m_meshFilter.mesh = m_buildings[5];
