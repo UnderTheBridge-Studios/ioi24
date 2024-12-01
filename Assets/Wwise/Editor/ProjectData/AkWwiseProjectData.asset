@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9ebcf19dca1154439de51eed84665b8c
     GuidInternal: 
-    m_lastTime: -8584686266507798034
+    m_lastTime: -8584685317021249976
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: 25c078ff6165ca4ea1e3ca614dfbe9ff
       Path: Events\Default Work Unit\PlayPointPlayer1
       maxAttenuation: 0
-      maxDuration: 0.6097116
-      minDuration: 0.29617715
+      maxDuration: 0.5127043
+      minDuration: 0.3625367
     - name: PlayPointPlayer2
       guid: 162f07e5a0d91041a8296f608dbf398e
       id: 3422018550
@@ -281,8 +281,8 @@ MonoBehaviour:
         guid: 162f07e5a0d91041a8296f608dbf398e
       Path: Events\Default Work Unit\PlayPointPlayer2
       maxAttenuation: 0
-      maxDuration: 0.6097116
-      minDuration: 0.29617715
+      maxDuration: 0.5127043
+      minDuration: 0.3625367
     - name: PlaySpeedBoost
       guid: b305dfd70ddb064b8537a8bae7b5da1d
       id: 2911875409

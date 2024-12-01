@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{CC6BEF8B-3848-92B0-1B17-5842341F973C}",
+    "Hash": "{AC172586-70C6-A74A-5F6B-BE63E75CE175}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -259,8 +259,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\PlayPointPlayer1",
       "GUID": "{FF78C025-6561-4ECA-A1E3-CA614DFBE9FF}",
       "DurationType": "OneShot",
-      "DurationMin": "0.29617715",
-      "DurationMax": "0.6097116",
+      "DurationMin": "0.3625367",
+      "DurationMax": "0.5127043",
       "MediaRefs": [
        {
         "Id": "488614765"
@@ -276,8 +276,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\PlayPointPlayer2",
       "GUID": "{E5072F16-D9A0-4110-A829-6F608DBF398E}",
       "DurationType": "OneShot",
-      "DurationMin": "0.29617715",
-      "DurationMax": "0.6097116",
+      "DurationMin": "0.3625367",
+      "DurationMax": "0.5127043",
       "MediaRefs": [
        {
         "Id": "636736344"
@@ -354,6 +354,6 @@
     ]
    }
   ],
-  "FileHash": "{A7D5C661-5D36-D6D8-1368-A5326EB06364}"
+  "FileHash": "{1C849C70-2A06-CAB7-4609-62702F6181A2}"
  }
 }

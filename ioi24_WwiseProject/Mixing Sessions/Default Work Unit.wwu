@@ -3,7 +3,12 @@
 	<MixingSessions>
 		<WorkUnit Name="Default Work Unit" ID="{CD2C5B85-AECA-4FF2-A7BF-4D7A3A580D01}" PersistMode="Standalone">
 			<ChildrenList>
-				<MixingSession Name="Main" ID="{7C92B505-64B0-4702-B287-96CD6EDC241A}"/>
+				<MixingSession Name="Main" ID="{7C92B505-64B0-4702-B287-96CD6EDC241A}">
+					<ObjectList>
+						<ObjectRef Name="Music" ID="{B91FE80E-73F9-47F3-AAA3-9C1071E20FCF}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+						<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

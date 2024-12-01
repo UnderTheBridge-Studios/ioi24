@@ -6,6 +6,13 @@
 				<Folder Name="SFX" ID="{74306EA9-0018-419A-A1A8-0C2BC18EC89E}" ShortID="43538576">
 					<ChildrenList>
 						<Sound Name="point_player1" ID="{501B3538-4B72-4BE7-94BD-1F0FB906135B}" ShortID="822746033">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
@@ -75,7 +82,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -152,8 +159,8 @@
 											<Modifier Name="" ID="{ADF4ED63-BAE6-48ED-88EE-3904819447F8}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="650"/>
-													<Property Name="Min" Type="Real64" Value="-600"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -161,7 +168,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -258,6 +265,11 @@
 						<Sound Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" ShortID="400794981">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -338,7 +350,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -473,7 +485,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -514,7 +526,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -680,6 +692,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Clock-Alarm" ID="{3DF802FC-03B7-4440-89CB-F65810359A00}" ShortID="862166973">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>

@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{97C77917-19B8-419E-98A7-DA08E332574E}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{97C77917-19B8-419E-98A7-DA08E332574E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{97C77917-19B8-419E-98A7-DA08E332574E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{FFE7BC70-3162-415F-A261-09235EC33A92}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MusicPlaylist" ID="{3803B10C-9D8D-48EF-BA56-9C1BE84081FD}" WorkUnitID="{C6E8ED34-FB8C-4BA7-B024-D7634601C360}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="point_player1" ID="{501B3538-4B72-4BE7-94BD-1F0FB906135B}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="point_player2" ID="{19518A02-F007-4762-B799-2612B2C58A3D}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Clock-Alarm" ID="{3DF802FC-03B7-4440-89CB-F65810359A00}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="people-screaming-sound-effect" ID="{79D523AA-B6AE-4D1A-AE63-9A9CAB21AAED}" WorkUnitID="{92EA0EE0-E2C5-495F-B49F-D95C68D5A22C}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Tempo" ID="{470C83A0-DBBE-4275-A109-2A541112F8AE}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ComboPlayer1" ID="{ACC93C27-652F-4661-971C-911FFD8015BC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ComboPlayer2" ID="{78B05279-6D96-476D-B799-D18F75D5176D}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
