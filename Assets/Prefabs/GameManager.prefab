@@ -47,13 +47,47 @@ MonoBehaviour:
   m_buildingPuntuation: 01000000020000000400000008000000
   m_Player1: {fileID: 0}
   m_Player2: {fileID: 0}
-  m_maxTime: 100
+  m_maxTime: 91
   m_colorChangeTime: 5
   m_speedBoostMuliplier: 8
   m_UIManager: {fileID: 0}
   m_WwiseManager: {fileID: 0}
   m_buildingsGO: {fileID: 0}
   m_barriersGO: {fileID: 0}
+  m_enterAction:
+    m_Name: Enter
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f8342225-d519-49d2-b518-9691020231b0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f3712262-ba89-4913-b6e7-7cab24536607
+      m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Enter
+      m_Flags: 0
+    m_Flags: 0
+  m_escAction:
+    m_Name: Esc
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b18d964b-275f-428e-9755-64f3b3a6cfd5
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e700fc5c-1e7b-4bb0-b095-3ed5805e590c
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Esc
+      m_Flags: 0
+    m_Flags: 0
   m_WwiseMainMenu:
     idInternal: 0
     valueGuidInternal: 
