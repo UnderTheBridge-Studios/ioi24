@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float m_HitStopTime = 0.1f;
     [SerializeField] private float m_SpeedTimeHitStopTime = 0.2f;
     private bool m_IsInHitStop;
+    private bool m_HasBounceInThisFrame;
     private Vector3 m_saveVelocity;
 
     public bool IsPlayer1 => m_isPlayer1;
@@ -37,6 +38,11 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.SaveBallVelocity(m_isPlayer1, m_ball.linearVelocity.magnitude);
     }
 
+    private void LateUpdate()
+    {
+        m_HasBounceInThisFrame = false;
+    }
+
     public void Move(InputAction.CallbackContext context)
     {
         m_input = context.ReadValue<Vector2>();
@@ -50,6 +56,10 @@ public class PlayerController : MonoBehaviour
 
     public void Bounce(Vector3 buildPos)
     {
+        if (m_HasBounceInThisFrame)
+            return;
+        m_HasBounceInThisFrame = true;
+
         Vector3 normal;
         if (transform.position.x < buildPos.x)
         {
@@ -66,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 normal = new Vector3(1, 0, 1);
         }
 
-        m_ball.linearVelocity = Vector3.Reflect(m_ball.linearVelocity, normal.normalized); 
+        m_ball.linearVelocity = Vector3.Reflect(m_ball.linearVelocity + Vector3.one, normal.normalized); 
     }
 
     public void SpeedBost(float height)
@@ -94,12 +104,12 @@ public class PlayerController : MonoBehaviour
 
     public void SmallBounce(float height)
     {
-        if(transform.position.y < m_smallBounceThreshold)
+        if (transform.position.y < m_smallBounceThreshold)
             m_ball.AddForce(0, 100, 0);
 
         m_saveVelocity = m_ball.linearVelocity;
         m_IsInHitStop = true;
         m_ball.linearVelocity = Vector3.zero;
-        Invoke("SetVelocity", m_HitStopTime + (height * 0.02f));
+        Invoke("SetVelocity", m_HitStopTime /*+ (height * 0.01f)*/);
     }
 }

@@ -84,9 +84,6 @@ public class BuildingController : MonoBehaviour
 
         SetBuilding();
 
-
-
-        SetBuildingColor(BuildingColor.Blue);
     }
 
     private void SetBuilding()
