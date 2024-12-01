@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
                 m_Player1.GetComponent<PlayerController>().DisablePhysics();
                 m_Player2.GetComponent<PlayerController>().DisablePhysics();
 
-                Invoke("EnableControls", 2.5f);
+                Invoke("EnableControls", 1.8f);
 
 
                 m_UIManager.InitializeHUD(m_pointsPlayer1, m_pointsPlayer2, m_timer);
