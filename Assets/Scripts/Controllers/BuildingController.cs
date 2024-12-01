@@ -39,7 +39,7 @@ public class BuildingController : MonoBehaviour
     private MeshRenderer m_meshRenderer;
 
     public enum BuildingState { Default, Colored, Destroyed }
-    public enum BuildingColor { Default, Gold, Black, Blue}
+    public enum BuildingColor { Default, Gold, Black, Blue, Player1, Player2}
 
     private BuildingState m_state = BuildingState.Default;
     private BuildingColor m_color = BuildingColor.Default;
@@ -127,22 +127,31 @@ public class BuildingController : MonoBehaviour
         }
         else
         {
-            m_collider.enabled = false;
-            m_meshFilter.mesh = m_buildings[5];
-            m_state = BuildingState.Destroyed;
-
-            GameManager.Instance.AddPoints(playerController.IsPlayer1, m_color, m_height);
-            GameManager.Instance.RemoveBuilding(this);
-			
-			playerController.SmallBounce();
-			
-            if(playerController.IsPlayer1)
-                m_WwiseBuildingDestroyedPlayer1.Post(gameObject);
-            else
-                m_WwiseBuildingDestroyedPlayer2.Post(gameObject);
-
-            m_particleSystem.Play();
+            DestroyBuilding(playerController);
         }
+    }
+
+    private void DestroyBuilding(PlayerController player)
+    {
+        m_collider.enabled = false;
+        m_meshFilter.mesh = m_buildings[5];
+
+        if (player.IsPlayer1)
+            SetBuildingColor(BuildingColor.Player1);
+        else
+            SetBuildingColor(BuildingColor.Player2);
+
+        GameManager.Instance.AddPoints(player.IsPlayer1, m_color, m_height);
+        GameManager.Instance.RemoveBuilding(this);
+
+        player.SmallBounce();
+
+        if (player.IsPlayer1)
+            m_WwiseBuildingDestroyedPlayer1.Post(gameObject);
+        else
+            m_WwiseBuildingDestroyedPlayer2.Post(gameObject);
+
+        m_particleSystem.Play();
     }
 
     public void SetBuildingColor(BuildingColor color)
@@ -151,27 +160,37 @@ public class BuildingController : MonoBehaviour
         switch (m_color)
         {
             case BuildingColor.Default:
-                m_materialBlock.SetColor("_BaseColor", Color.white);
+                m_materialBlock.SetColor("_Tint", Color.white);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
                 m_state = BuildingState.Default;
                 break;
             case BuildingColor.Gold:
-                m_materialBlock.SetColor("_BaseColor", Color.yellow);
+                m_materialBlock.SetColor("_Tint", Color.yellow);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
                 m_state = BuildingState.Colored;
                 StartCoroutine(colorTimer());
                 break;
             case BuildingColor.Black:
-                m_materialBlock.SetColor("_BaseColor", Color.black);
+                m_materialBlock.SetColor("_Tint", Color.black);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
                 m_state = BuildingState.Colored;
                 StartCoroutine(colorTimer());
                 break;
             case BuildingColor.Blue:
-                m_materialBlock.SetColor("_BaseColor", Color.blue);
+                m_materialBlock.SetColor("_Tint", Color.blue);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
                 m_state = BuildingState.Colored;
                 StartCoroutine(colorTimer());
+                break;
+            case BuildingColor.Player1:
+                m_materialBlock.SetColor("_Tint", new Color(0.878f, 0.576f, 0.31f, 1f));
+                m_meshRenderer.SetPropertyBlock(m_materialBlock);
+                m_state = BuildingState.Destroyed;
+                break;
+            case BuildingColor.Player2:
+                m_materialBlock.SetColor("_Tint", new Color(0.27f, 0.475f, 0.537f, 1f));
+                m_meshRenderer.SetPropertyBlock(m_materialBlock);
+                m_state = BuildingState.Destroyed;
                 break;
         }
     }

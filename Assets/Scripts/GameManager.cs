@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
                 {
                     ChangeBuildingColor(randomBuilding);
                     m_colorTimer = 0f;
-                    m_colorChangeTime = Random.Range(3f, 6f);
+                    m_colorChangeTime = Random.Range(1f, 3f);
                 }
             }
         }
@@ -170,6 +170,11 @@ public class GameManager : MonoBehaviour
     public void RemoveBuilding(BuildingController building)
     {
         m_buildings.Remove(building);
+
+        if (m_buildings.Count <= 0)
+        {
+            ChangeGameState(GameState.VictoryScreen);
+        }
     }
 
     public void Replay()
