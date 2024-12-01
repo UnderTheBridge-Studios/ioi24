@@ -147,7 +147,7 @@ public class BuildingController : MonoBehaviour
         if (m_color == BuildingColor.Blue)
             player.SpeedBost(m_height);
         else
-            player.SmallBounce();
+            player.SmallBounce(m_height);
 
         if (player.IsPlayer1)
             m_WwiseBuildingDestroyedPlayer1.Post(gameObject);

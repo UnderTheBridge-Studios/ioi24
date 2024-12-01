@@ -18,7 +18,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 m_movement;
     private Vector2 m_input;
 
-    private bool IsInHitStop;
+    //HitStop
+    [SerializeField] private float m_HitStopTime = 0.1f;
+    [SerializeField] private float m_SpeedTimeHitStopTime = 0.2f;
+    private bool m_IsInHitStop;
+    private Vector3 m_saveVelocity;
 
     public bool IsPlayer1 => m_isPlayer1;
 
@@ -67,9 +71,18 @@ public class PlayerController : MonoBehaviour
 
     public void SpeedBost(float height)
     {
-        m_ball.linearVelocity = m_ball.linearVelocity.normalized * GameManager.Instance.speedBoostMuliplier;
-        IsInHitStop = true;
+        m_saveVelocity = m_ball.linearVelocity.normalized * GameManager.Instance.speedBoostMuliplier;
+        m_IsInHitStop = true;
+        m_ball.linearVelocity = Vector3.zero;
+        Invoke("SetVelocity", m_SpeedTimeHitStopTime);
     }
+
+    private void SetVelocity()
+    {
+        m_IsInHitStop = false;
+        m_ball.linearVelocity = m_saveVelocity;
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -79,9 +92,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SmallBounce()
+    public void SmallBounce(float height)
     {
         if(transform.position.y < m_smallBounceThreshold)
             m_ball.AddForce(0, 100, 0);
+
+        m_saveVelocity = m_ball.linearVelocity;
+        m_IsInHitStop = true;
+        m_ball.linearVelocity = Vector3.zero;
+        Invoke("SetVelocity", m_HitStopTime * height);
     }
 }
