@@ -100,6 +100,6 @@ public class PlayerController : MonoBehaviour
         m_saveVelocity = m_ball.linearVelocity;
         m_IsInHitStop = true;
         m_ball.linearVelocity = Vector3.zero;
-        Invoke("SetVelocity", m_HitStopTime * height);
+        Invoke("SetVelocity", m_HitStopTime + (height * 0.02f));
     }
 }
