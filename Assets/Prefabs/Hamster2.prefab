@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b18cda779d54c84a8d4b229a55bfbf6, type: 3}
       propertyPath: m_Name
-      value: HamsterPose02
+      value: Hamster2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_lerpVelocity: 0.2
   m_isPlayer1: 0
+  m_movementAmount: 1
 --- !u!114 &8032447679803827415
 MonoBehaviour:
   m_ObjectHideFlags: 0

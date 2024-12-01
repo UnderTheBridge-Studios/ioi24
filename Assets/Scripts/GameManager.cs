@@ -180,10 +180,7 @@ public class GameManager : MonoBehaviour
     public void SaveBallVelocity(bool IsPlayer1, float velocity)
     {
         if (IsPlayer1)
-        {
             m_velocityPlayer1 = velocity;
-            Debug.Log(m_velocityPlayer1);
-        }
         else
             m_velocityPlayer2 = velocity;
     }
