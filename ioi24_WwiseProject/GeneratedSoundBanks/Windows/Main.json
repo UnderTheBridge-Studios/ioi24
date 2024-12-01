@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{31DEBE74-0ACA-498F-B7DC-DD40D2DC9459}",
+    "Hash": "{94A110E2-5DB0-C472-500F-968DDEAE8F70}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "people-screaming-sound-effect.wav",
-      "CachePath": "DA/{DAEAA3C3-FD9E-E026-444A-2CDA11265239}.wem"
+      "CachePath": "32/{3221B87C-F73E-07E6-1FFD-2DD21447362C}.wem"
      },
      {
       "Id": "232726485",
@@ -115,9 +115,7 @@
       "Name": "PlayMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\PlayMusic",
       "GUID": "{6A5B8445-908A-4469-B4B1-FCA3B4F6F29B}",
-      "DurationType": "OneShot",
-      "DurationMin": "56.88889",
-      "DurationMax": "56.88889",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "491864704"
@@ -212,6 +210,6 @@
     ]
    }
   ],
-  "FileHash": "{961C345A-5C3B-BC8F-2684-6DE001903280}"
+  "FileHash": "{1718A33D-47E2-E624-E64F-BF2C488FCB56}"
  }
 }

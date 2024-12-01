@@ -18087,10 +18087,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 959520845}
     - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
-      propertyPath: m_maxTime
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 6479583465966720035, guid: 54e7f6bd78c0a3f41ab553e9d3e4c9aa, type: 3}
       propertyPath: m_UIManager
       value: 
       objectReference: {fileID: 292044213}
@@ -52094,10 +52090,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8116124307687289120, guid: f6965e1ae8fa8bc4188ff5eb9a54b604, type: 3}
-      propertyPath: addValueDestruction
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 8851626666687043463, guid: f6965e1ae8fa8bc4188ff5eb9a54b604, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

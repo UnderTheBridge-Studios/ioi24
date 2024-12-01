@@ -92,8 +92,8 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _Bounce: 0
-    - _BounceMax: 1
+    - _Bounce: -0.12521832
+    - _BounceMax: 1.08
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
