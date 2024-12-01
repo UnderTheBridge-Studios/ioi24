@@ -29,12 +29,12 @@ public class BuildingController : MonoBehaviour
 
     private Collider m_collider;
     private MeshFilter m_meshFilter;
+    private ParticleSystem m_particleSystem;
 
     private int m_height = 0;
     private int m_rotation = 0;
     private float m_breakVelocity = 0.1f;
 
-    //Material instance properties
     private MaterialPropertyBlock m_materialBlock;
     private MeshRenderer m_meshRenderer;
 
@@ -51,6 +51,7 @@ public class BuildingController : MonoBehaviour
     {
         m_collider = GetComponent<Collider>();
         m_meshFilter = GetComponent<MeshFilter>();
+        m_particleSystem = GetComponentInChildren<ParticleSystem>();
 
         m_materialBlock = new MaterialPropertyBlock();
         m_meshRenderer = GetComponent<MeshRenderer>();
@@ -139,6 +140,8 @@ public class BuildingController : MonoBehaviour
                 m_WwiseBuildingDestroyedPlayer1.Post(gameObject);
             else
                 m_WwiseBuildingDestroyedPlayer2.Post(gameObject);
+
+            m_particleSystem.Play();
         }
     }
 
