@@ -35,9 +35,14 @@ public class GameManager : MonoBehaviour
     private float m_colorTimer;
     private GameState m_gameState;
 
+    private float m_velocityPlayer1;
+    private float m_velocityPlayer2;
+
     private List<BuildingController> m_buildings;
     private Transform[] m_barriers;
 
+    public float velocityPlayer1 => m_velocityPlayer1;
+    public float velocityPlayer2 => m_velocityPlayer2;
     public GameObject Player1 => m_Player1;
     public GameObject Player2 => m_Player2;
 
@@ -175,6 +180,14 @@ public class GameManager : MonoBehaviour
         {
             ChangeGameState(GameState.VictoryScreen);
         }
+    }
+
+    public void SaveBallVelocity(bool IsPlayer1, float velocity)
+    {
+        if (IsPlayer1)
+            m_velocityPlayer1 = velocity;
+        else
+            m_velocityPlayer2 = velocity;
     }
 
     public void Replay()

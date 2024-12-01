@@ -7,11 +7,10 @@ public class PlayerController : MonoBehaviour
 
     [Tooltip("True Player1, False Player2")]
     [SerializeField] private bool m_isPlayer1;
-
     [SerializeField] private float m_acceleration;
+    [SerializeField] private float m_smallBounceThreshold = 0.8f;
 
-    [SerializeField] private float m_smallBounceThreshold = 1;
-
+    private float m_velocity;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.Event m_WwiseCollisionPlayers;
@@ -29,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         m_ball.AddForce(m_movement * m_acceleration);
+        GameManager.Instance.SaveBallVelocity(m_isPlayer1, m_ball.linearVelocity.magnitude);
     }
 
     public void Move(InputAction.CallbackContext context)
