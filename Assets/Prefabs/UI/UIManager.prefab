@@ -536,8 +536,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287199495
-  m_fontColor: {r: 0.027450982, g: 0.47450984, b: 0.5372549, a: 1}
+    rgba: 4278222549
+  m_fontColor: {r: 0.836478, g: 0.49454823, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1072,8 +1072,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278752224
-  m_fontColor: {r: 0.87843144, g: 0.5764706, b: 0.03137255, a: 1}
+    rgba: 4287199495
+  m_fontColor: {r: 0.02745098, g: 0.4745098, b: 0.5372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1830,7 +1830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5367012621981131696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2148,7 +2148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &844579677390479800
 RectTransform:
   m_ObjectHideFlags: 0
