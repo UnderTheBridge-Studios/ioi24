@@ -99,7 +99,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DotAmount: 1.11
+    - _DotAmount: 1.12
     - _DotPow: 5
     - _DstBlend: 0
     - _DstBlendAlpha: 0
