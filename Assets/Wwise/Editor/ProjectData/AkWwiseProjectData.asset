@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e17bcc9344f9364cb4e9b8dd6f7fcc54
     GuidInternal: 
-    m_lastTime: -8584685389818843966
+    m_lastTime: -8584685339956850807
     List:
     - name: Main
       guid: 71b4c4ce3725584e9579e792a33b88a8
@@ -128,8 +128,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09f7e4898eb0074497baaeb268365c0d
     GuidInternal: 
-    m_lastTime: -8584685393839045991
+    m_lastTime: -8584685340092031226
     List:
+    - name: Play_Clock_Alarm
+      guid: 1094f37b91e76d4da9a0df9a6ee301df
+      id: 4045129230
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: Play_Clock_Alarm
+        ObjectType: 3
+        guid: 1094f37b91e76d4da9a0df9a6ee301df
+      Path: Events\Default Work Unit\Play_Clock_Alarm
+      maxAttenuation: 0
+      maxDuration: 1.824
+      minDuration: 1.824
     - name: PlayBorderAppear
       guid: 0a1db901978c6d4b94aa32feef96bd28
       id: 1435390134
@@ -283,6 +300,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.3484846
       minDuration: 0.3484846
+    - name: PlayWinTune
+      guid: 141c4057091a7a4eb1631c3bf6695c6d
+      id: 481230709
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayWinTune
+        ObjectType: 3
+        guid: 141c4057091a7a4eb1631c3bf6695c6d
+      Path: Events\Default Work Unit\PlayWinTune
+      maxAttenuation: 0
+      maxDuration: 2.6715274
+      minDuration: 2.6715274
     - name: StopPeopleScreaming
       guid: 9e19ffa563fdd94eaa5f03aecad2f426
       id: 3683208001
@@ -382,7 +416,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b6df22b7286d8547b71d7d797aac2089
     GuidInternal: 
-    m_lastTime: -8584685433769647563
+    m_lastTime: -8584685359478800234
     List:
     - name: GameState
       guid: f65874fe1fa8b94684286c0c30dd88f5
@@ -495,7 +529,7 @@ MonoBehaviour:
     m_lastTime: -8584687189576058670
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
+  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000090000000a0000000e0000000f00000010000000130000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

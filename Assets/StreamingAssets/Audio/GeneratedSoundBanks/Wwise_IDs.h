@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CLOCK_ALARM = 4045129230U;
         static const AkUniqueID PLAYBORDERAPPEAR = 1435390134U;
         static const AkUniqueID PLAYBORDERDISAPPEAR = 3002365032U;
         static const AkUniqueID PLAYBOUNCEBUILDING = 1925897751U;
@@ -22,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAYPOINTPLAYER1 = 3422018549U;
         static const AkUniqueID PLAYPOINTPLAYER2 = 3422018550U;
         static const AkUniqueID PLAYSPEEDBOOST = 2911875409U;
+        static const AkUniqueID PLAYWINTUNE = 481230709U;
         static const AkUniqueID STOPPEOPLESCREAMING = 3683208001U;
     } // namespace EVENTS
 

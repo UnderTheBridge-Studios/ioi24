@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{FB9528FC-B6F3-6796-FF91-7AE086FF01D1}",
+    "Hash": "{CC6BEF8B-3848-92B0-1B17-5842341F973C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Block-Slide-2.wav",
-      "CachePath": "19/{19DCD151-6A79-BAAA-D4B6-70C844622E77}.wem"
+      "CachePath": "26/{267FE1BC-F21F-425F-3FC9-4565BB39CE1D}.wem"
      },
      {
       "Id": "172051393",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Block-Slide-3.wav",
-      "CachePath": "2C/{2C715A6F-5143-C952-8633-AD8A33D598C4}.wem"
+      "CachePath": "44/{447B050F-DA34-51C6-C75A-8E202B4281D0}.wem"
      },
      {
       "Id": "232726485",
@@ -40,12 +40,20 @@
       "CachePath": "04/{049C33D1-EB31-DDED-144C-FE4C33E76702}.wem"
      },
      {
+      "Id": "294087566",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Clock-Alarm-2.wav",
+      "CachePath": "B1/{B1DDC60C-203D-C749-D3B5-B91F34A79A92}.wem"
+     },
+     {
       "Id": "379634924",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Bonk-Sound-Effect_1.wav",
-      "CachePath": "F2/{F236EB2C-687D-AEE5-A95B-071F697A3CEE}.wem"
+      "CachePath": "53/{53C09C0C-6CE6-07EE-0FC9-E06FF4235E54}.wem"
      },
      {
       "Id": "452810040",
@@ -54,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "Special-Move-1.wav",
       "CachePath": "2C/{2CC65F6E-D6AA-93B1-11C5-1435FF505D96}.wem"
+     },
+     {
+      "Id": "483273838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PP_Win_Stinger.wav",
+      "CachePath": "CE/{CEF5BFF4-EB05-3396-EADD-63953786BF20}.wem"
      },
      {
       "Id": "488614765",
@@ -85,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Block-Slide-4.wav",
-      "CachePath": "B2/{B2518044-5173-7333-6B66-0D9A5D1E9E87}.wem"
+      "CachePath": "10/{1046CE72-7CCE-CCEF-BAC4-49ACFE875585}.wem"
      },
      {
       "Id": "917251637",
@@ -110,7 +126,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Block-Slide-1.wav",
-      "CachePath": "83/{836CD3BD-1248-4AAD-79CD-ECB2F4EB6D73}.wem"
+      "CachePath": "D4/{D4E12B4B-847E-BEC7-BA31-14A2B486FE6E}.wem"
      },
      {
       "Id": "1055314346",
@@ -122,6 +138,20 @@
      }
     ],
     "Events": [
+     {
+      "Id": "4045129230",
+      "Name": "Play_Clock_Alarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Clock_Alarm",
+      "GUID": "{7BF39410-E791-4D6D-A9A0-DF9A6EE301DF}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.824",
+      "DurationMax": "1.824",
+      "MediaRefs": [
+       {
+        "Id": "294087566"
+       }
+      ]
+     },
      {
       "Id": "1435390134",
       "Name": "PlayBorderAppear",
@@ -272,6 +302,20 @@
       ]
      },
      {
+      "Id": "481230709",
+      "Name": "PlayWinTune",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayWinTune",
+      "GUID": "{57401C14-1A09-4E7A-B163-1C3BF6695C6D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.6715274",
+      "DurationMax": "2.6715274",
+      "MediaRefs": [
+       {
+        "Id": "483273838"
+       }
+      ]
+     },
+     {
       "Id": "3683208001",
       "Name": "StopPeopleScreaming",
       "ObjectPath": "\\Events\\Default Work Unit\\StopPeopleScreaming",
@@ -310,6 +354,6 @@
     ]
    }
   ],
-  "FileHash": "{B32EC91A-C414-55A5-F8DC-70817C9E65C7}"
+  "FileHash": "{A7D5C661-5D36-D6D8-1368-A5326EB06364}"
  }
 }

@@ -645,6 +645,62 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="PP_Win_Stinger" ID="{4B739220-08F3-4ECC-B5AD-F4CA4E66E1F2}" ShortID="412196274">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{B91FE80E-73F9-47F3-AAA3-9C1071E20FCF}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PP_Win_Stinger" ID="{638956DA-3BDD-4E79-971E-0E535673A5C0}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.455115375590414"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.67152728583449"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PP_Win_Stinger.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="483273838"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PP_Win_Stinger" ID="{638956DA-3BDD-4E79-971E-0E535673A5C0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clock-Alarm" ID="{3DF802FC-03B7-4440-89CB-F65810359A00}" ShortID="862166973">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{01A84FB5-0DE0-4ACB-9D98-211671B1E6D5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{1C1213B6-BC27-47B1-AF16-A155FA244569}" WorkUnitID="{9DF1BC9E-11CA-4354-9DE5-1EED84665B8C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clock-Alarm-2" ID="{66FB3118-B0CE-4358-8263-58E511199D2B}">
+									<Language>SFX</Language>
+									<AudioFile>Clock-Alarm-2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="294087566"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clock-Alarm-2" ID="{66FB3118-B0CE-4358-8263-58E511199D2B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
