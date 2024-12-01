@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AK.Wwise.State m_WwiseVictory;
     [SerializeField] private AK.Wwise.RTPC m_WwiseTempo;
     [SerializeField] private AK.Wwise.Event m_WwiseAlarmTimer;
+    [SerializeField] private AK.Wwise.Event m_WwiseHamsterFallen;
 
     public enum GameState { MainMenu, Gameplay, VictoryScreen}
 
@@ -119,6 +120,8 @@ public class GameManager : MonoBehaviour
 
         m_Player2.GetComponent<PlayerController>().EnableMaterial();
         m_Player2.GetComponent<PlayerController>().EnableInput();
+
+        m_WwiseHamsterFallen.Post(gameObject);
     }
 
 

@@ -80,3 +80,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b609bed7723c96b419e54dde302c7cac, type: 2}
+  m_WwiseHamsterFallen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc032613f1259924fad43e950711d14e, type: 2}
