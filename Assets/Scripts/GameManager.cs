@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
                 int randomIndex = Random.Range(0, m_buildings.Count);
                 BuildingController randomBuilding = m_buildings[randomIndex];
 
-                if (randomBuilding.CurrentState == BuildingController.BuildingState.Default)
+                if (randomBuilding.CurrentColor == BuildingController.BuildingColor.Default)
                 {
                     ChangeBuildingColor(randomBuilding);
                     m_colorTimer = 0f;
@@ -193,6 +193,20 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void EnterInput(InputAction.CallbackContext context)
+    {
+        if (m_gameState == GameState.MainMenu)
+            ChangeGameState(GameState.Gameplay);
+    }
+
+    public void EscInput(InputAction.CallbackContext context)
+    {
+        if (m_gameState == GameState.Gameplay)
+            Replay();
+        else
+            Quit();
     }
 
     public void Quit()

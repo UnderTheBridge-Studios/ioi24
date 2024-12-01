@@ -13,6 +13,13 @@ public class BuildingController : MonoBehaviour
     [Tooltip("Height chances of appearing")]
     [SerializeField] private float[] m_heightChances;
 
+    [Header("Colors")]
+    [SerializeField] private Color m_gold;
+    [SerializeField] private Color m_black;
+    [SerializeField] private Color m_blue;
+    [SerializeField] private Color m_player1;
+    [SerializeField] private Color m_player2;
+
     [Header("Default Values")]
     [Tooltip("0 to 4")]
     [SerializeField] private int m_buildingHeight;
@@ -39,13 +46,9 @@ public class BuildingController : MonoBehaviour
     private MaterialPropertyBlock m_materialBlock;
     private MeshRenderer m_meshRenderer;
 
-    public enum BuildingState { Default, Colored, Destroyed }
     public enum BuildingColor { Default, Gold, Black, Blue, Player1, Player2}
 
-    private BuildingState m_state = BuildingState.Default;
     private BuildingColor m_color = BuildingColor.Default;
-    
-    public BuildingState CurrentState => m_state;
     public BuildingColor CurrentColor => m_color;
 
     private void Start()
@@ -168,43 +171,33 @@ public class BuildingController : MonoBehaviour
                 m_materialBlock.SetColor("_Tint", Color.white);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
 
-                m_state = BuildingState.Default;
                 break;
             case BuildingColor.Gold:
-                m_materialBlock.SetColor("_Tint", Color.yellow);
+                m_materialBlock.SetColor("_Tint", m_gold);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
-
-                m_state = BuildingState.Colored;
 
                 m_coroutine = StartCoroutine(colorTimer());
                 break;
             case BuildingColor.Black:
-                m_materialBlock.SetColor("_Tint", Color.black);
+                m_materialBlock.SetColor("_Tint", m_black);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
-
-                m_state = BuildingState.Colored;
 
                 m_coroutine = StartCoroutine(colorTimer());
                 break;
             case BuildingColor.Blue:
-                m_materialBlock.SetColor("_Tint", Color.blue);
+                m_materialBlock.SetColor("_Tint", m_blue);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
-
-                m_state = BuildingState.Colored;
 
                 m_coroutine = StartCoroutine(colorTimer());
                 break;
             case BuildingColor.Player1:
-                m_materialBlock.SetColor("_Tint", new Color(0.878f, 0.576f, 0.31f, 1f));
+                m_materialBlock.SetColor("_Tint", m_player1);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
 
-                m_state = BuildingState.Destroyed;
                 break;
             case BuildingColor.Player2:
-                m_materialBlock.SetColor("_Tint", new Color(0.27f, 0.475f, 0.537f, 1f));
+                m_materialBlock.SetColor("_Tint", m_player2);
                 m_meshRenderer.SetPropertyBlock(m_materialBlock);
-
-                m_state = BuildingState.Destroyed;
                 break;
         }
     }
