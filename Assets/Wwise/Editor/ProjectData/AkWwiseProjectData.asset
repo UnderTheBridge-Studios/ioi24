@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e17bcc9344f9364cb4e9b8dd6f7fcc54
     GuidInternal: 
-    m_lastTime: -8584686266505478234
+    m_lastTime: -8584685389818843966
     List:
     - name: Main
       guid: 71b4c4ce3725584e9579e792a33b88a8
@@ -128,8 +128,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09f7e4898eb0074497baaeb268365c0d
     GuidInternal: 
-    m_lastTime: -8584685558514230360
+    m_lastTime: -8584685393839045991
     List:
+    - name: PlayBorderAppear
+      guid: 0a1db901978c6d4b94aa32feef96bd28
+      id: 1435390134
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayBorderAppear
+        ObjectType: 3
+        guid: 0a1db901978c6d4b94aa32feef96bd28
+      Path: Events\Default Work Unit\PlayBorderAppear
+      maxAttenuation: 0
+      maxDuration: 0.2254768
+      minDuration: 0.18563351
+    - name: PlayBorderDisappear
+      guid: 13878001ee60804a869dffcfb80d7bd2
+      id: 3002365032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlayBorderDisappear
+        ObjectType: 3
+        guid: 13878001ee60804a869dffcfb80d7bd2
+      Path: Events\Default Work Unit\PlayBorderDisappear
+      maxAttenuation: 0
+      maxDuration: 0.26969194
+      minDuration: 0.22203553
     - name: PlayBounceBuilding
       guid: 6afacb2777e31d45bf4afd2f3cdf986f
       id: 1925897751
@@ -232,6 +266,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6097116
       minDuration: 0.29617715
+    - name: PlaySpeedBoost
+      guid: b305dfd70ddb064b8537a8bae7b5da1d
+      id: 2911875409
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09f7e4898eb0074497baaeb268365c0d
+      - ElementName: PlaySpeedBoost
+        ObjectType: 3
+        guid: b305dfd70ddb064b8537a8bae7b5da1d
+      Path: Events\Default Work Unit\PlaySpeedBoost
+      maxAttenuation: 0
+      maxDuration: 0.3484846
+      minDuration: 0.3484846
     - name: StopPeopleScreaming
       guid: 9e19ffa563fdd94eaa5f03aecad2f426
       id: 3683208001
@@ -331,7 +382,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b6df22b7286d8547b71d7d797aac2089
     GuidInternal: 
-    m_lastTime: -8584686060039139120
+    m_lastTime: -8584685433769647563
     List:
     - name: GameState
       guid: f65874fe1fa8b94684286c0c30dd88f5

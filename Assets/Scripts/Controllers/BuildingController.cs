@@ -86,10 +86,6 @@ public class BuildingController : MonoBehaviour
             m_rotation = m_buildingRotation;
 
         SetBuilding();
-
-
-
-        SetBuildingColor(BuildingColor.Blue);
     }
 
     private void SetBuilding()

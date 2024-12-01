@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.Event m_WwiseCollisionPlayers;
+    [SerializeField] private AK.Wwise.Event m_WwiseSpeedBoost;
 
     private Vector3 m_movement;
     private Vector2 m_input;
@@ -69,6 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         m_ball.linearVelocity = m_ball.linearVelocity.normalized * GameManager.Instance.speedBoostMuliplier;
         IsInHitStop = true;
+        m_WwiseSpeedBoost.Post(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)

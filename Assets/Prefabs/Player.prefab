@@ -157,6 +157,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fad80def41d15d44ba61e47d4ec1c189, type: 2}
+  m_WwiseSpeedBoost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 425c3ebfa75a23f408801a395bf19ff3, type: 2}
 --- !u!114 &1234177603122996254
 MonoBehaviour:
   m_ObjectHideFlags: 0

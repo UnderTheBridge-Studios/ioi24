@@ -10,18 +10,26 @@
     "Type": "User",
     "GUID": "{CEC4B471-2537-4E58-9579-E792A33B88A8}",
     "Language": "SFX",
-    "Hash": "{94A110E2-5DB0-C472-500F-968DDEAE8F70}",
+    "Hash": "{FB9528FC-B6F3-6796-FF91-7AE086FF01D1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
      {
-      "Id": "123580271",
+      "Id": "67982112",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "people-screaming-sound-effect.wav",
-      "CachePath": "32/{3221B87C-F73E-07E6-1FFD-2DD21447362C}.wem"
+      "ShortName": "Block-Slide-2.wav",
+      "CachePath": "19/{19DCD151-6A79-BAAA-D4B6-70C844622E77}.wem"
+     },
+     {
+      "Id": "172051393",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Block-Slide-3.wav",
+      "CachePath": "2C/{2C715A6F-5143-C952-8633-AD8A33D598C4}.wem"
      },
      {
       "Id": "232726485",
@@ -37,7 +45,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Bonk-Sound-Effect_1.wav",
-      "CachePath": "F2/{F2AE6B42-AAE0-CAD0-FB89-0A7E5D052107}.wem"
+      "CachePath": "F2/{F236EB2C-687D-AEE5-A95B-071F697A3CEE}.wem"
+     },
+     {
+      "Id": "452810040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Special-Move-1.wav",
+      "CachePath": "2C/{2CC65F6E-D6AA-93B1-11C5-1435FF505D96}.wem"
      },
      {
       "Id": "488614765",
@@ -64,6 +80,14 @@
       "CachePath": "40/{40C277EF-A02D-AEE8-F4D2-A6D3D72DEBEF}.wem"
      },
      {
+      "Id": "732824370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Block-Slide-4.wav",
+      "CachePath": "B2/{B2518044-5173-7333-6B66-0D9A5D1E9E87}.wem"
+     },
+     {
       "Id": "917251637",
       "Language": "SFX",
       "Streaming": "false",
@@ -79,9 +103,71 @@
       "ShortName": "PP_Silly_Goose_FULL_Loop.wav",
       "Path": "Media/945339757.wem",
       "CachePath": "92/{929BB01F-9FF2-0CD5-A27C-36BF487C9177}.wem"
+     },
+     {
+      "Id": "947127354",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Block-Slide-1.wav",
+      "CachePath": "83/{836CD3BD-1248-4AAD-79CD-ECB2F4EB6D73}.wem"
+     },
+     {
+      "Id": "1055314346",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "people-screaming-sound-effect-loop.wav",
+      "CachePath": "66/{660A39EA-7AF1-BFFA-8EEA-9DCBA3FBD7D8}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "1435390134",
+      "Name": "PlayBorderAppear",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayBorderAppear",
+      "GUID": "{01B91D0A-8C97-4B6D-94AA-32FEEF96BD28}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.18563351",
+      "DurationMax": "0.2254768",
+      "MediaRefs": [
+       {
+        "Id": "67982112"
+       },
+       {
+        "Id": "172051393"
+       },
+       {
+        "Id": "732824370"
+       },
+       {
+        "Id": "947127354"
+       }
+      ]
+     },
+     {
+      "Id": "3002365032",
+      "Name": "PlayBorderDisappear",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayBorderDisappear",
+      "GUID": "{01808713-60EE-4A80-869D-FFCFB80D7BD2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22203553",
+      "DurationMax": "0.26969194",
+      "MediaRefs": [
+       {
+        "Id": "67982112"
+       },
+       {
+        "Id": "172051393"
+       },
+       {
+        "Id": "732824370"
+       },
+       {
+        "Id": "947127354"
+       }
+      ]
+     },
      {
       "Id": "1925897751",
       "Name": "PlayBounceBuilding",
@@ -133,7 +219,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "123580271"
+        "Id": "1055314346"
        }
       ]
      },
@@ -168,6 +254,20 @@
        },
        {
         "Id": "917251637"
+       }
+      ]
+     },
+     {
+      "Id": "2911875409",
+      "Name": "PlaySpeedBoost",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlaySpeedBoost",
+      "GUID": "{D7DF05B3-DB0D-4B06-8537-A8BAE7B5DA1D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3484846",
+      "DurationMax": "0.3484846",
+      "MediaRefs": [
+       {
+        "Id": "452810040"
        }
       ]
      },
@@ -210,6 +310,6 @@
     ]
    }
   ],
-  "FileHash": "{1718A33D-47E2-E624-E64F-BF2C488FCB56}"
+  "FileHash": "{B32EC91A-C414-55A5-F8DC-70817C9E65C7}"
  }
 }
