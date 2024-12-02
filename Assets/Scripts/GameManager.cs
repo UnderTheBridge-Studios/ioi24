@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int[] m_buildingPuntuation;
     [SerializeField] private GameObject m_Player1;
     [SerializeField] private GameObject m_Player2;
+    [SerializeField] private GameObject m_hamster1;
+    [SerializeField] private GameObject m_hamster2;
     [SerializeField] private float m_maxTime;
     [SerializeField] private float m_colorChangeTime;
     [SerializeField] private float m_speedBoostMuliplier;
@@ -22,10 +25,6 @@ public class GameManager : MonoBehaviour
 	public WwiseManager m_WwiseManager;
     [SerializeField] private GameObject m_buildingsGO;
     [SerializeField] private GameObject m_barriersGO;
-    [SerializeField] private InputAction m_enterAction;
-    [SerializeField] private InputAction m_escAction;
-    [SerializeField] private GameObject m_hamster1;
-    [SerializeField] private GameObject m_hamster2;
 
     [Header("Wwise")]
     [SerializeField] private AK.Wwise.State m_WwiseMainMenu;
@@ -55,24 +54,6 @@ public class GameManager : MonoBehaviour
     public GameObject Player1 => m_Player1;
     public GameObject Player2 => m_Player2;
     public float speedBoostMuliplier => m_speedBoostMuliplier;
-
-    private void OnEnable()
-    {
-        m_enterAction.Enable();
-        m_enterAction.performed += EnterInput;
-
-        m_escAction.Enable();
-        m_escAction.performed += EscInput;
-    }
-
-    private void OnDisable()
-    {
-        m_enterAction.performed -= EnterInput;
-        m_enterAction.Disable();
-
-        m_escAction.performed -= EscInput;
-        m_escAction.Disable();
-    }
 
     private void Awake()
     {
@@ -251,14 +232,22 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void EnterInput(InputAction.CallbackContext context)
+    public void AcceptInput(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+            return;
+
         if (m_gameState == GameState.MainMenu)
             ChangeGameState(GameState.Gameplay);
+        else if (m_gameState == GameState.VictoryScreen)
+            Replay();
     }
 
-    public void EscInput(InputAction.CallbackContext context)
+    public void QuitInput(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+            return;
+
         if (m_gameState == GameState.Gameplay)
             Replay();
         else
