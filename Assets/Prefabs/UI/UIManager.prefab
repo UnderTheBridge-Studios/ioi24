@@ -1335,11 +1335,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Destroy buildings to score points
-
-    Player 1: WASD
-
-    Player 2: Arrows'
+  m_text: "Destroy buildings to score points\nPlayer 1: WASD\nPlayer 2: Arrows\n\nTaller,
+    shinier buildings? More points!\r\nRed buildings? Ouch! They\u2019ll take points
+    away.\r\nBlue buildings? Get ready for a speed boost!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 00a32a9ff02b3ff45a9dc59c9b4685e1, type: 2}
   m_sharedMaterial: {fileID: -3852556558228077175, guid: 00a32a9ff02b3ff45a9dc59c9b4685e1, type: 2}
@@ -1404,7 +1402,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -100.58142, z: 148.68591, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
