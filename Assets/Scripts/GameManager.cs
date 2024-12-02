@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 
     [Header("References")]
     public UIManager m_UIManager;
-	public WwiseManager m_WwiseManager;
     [SerializeField] private GameObject m_buildingsGO;
     [SerializeField] private GameObject m_barriersGO;
     [SerializeField] private InputAction m_enterAction;
@@ -206,13 +205,13 @@ public class GameManager : MonoBehaviour
         {
             m_pointsPlayer1 += m_buildingPuntuation[height - 1] * pointsMultiplier;
             m_UIManager.UpdatePointsPlayer1(m_pointsPlayer1);
-            m_WwiseManager.UpdatePointsPlayer1(height);
+            WwiseManager.Instance.UpdatePointsPlayer1(height);
         }
         else
         {
             m_pointsPlayer2 += m_buildingPuntuation[height - 1] * pointsMultiplier;
             m_UIManager.UpdatePointsPlayer2(m_pointsPlayer2);
-            m_WwiseManager.UpdatePointsPlayer2(height);
+            WwiseManager.Instance.UpdatePointsPlayer1(height);
         }
     }
 
